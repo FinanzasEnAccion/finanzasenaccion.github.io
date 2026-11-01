@@ -11,11 +11,11 @@
 <meta property="og:description" content="Dos hermanos controllers financieros. Herramientas gratis, nuestra historia y lo que usamos de verdad.">
 <meta property="og:image" content="https://finanzasenaccion.github.io/vivienda/og.png">
 <meta property="og:locale" content="es_ES">
-<link rel="canonical" href="https://finanzasenaccion.com/">
-<meta property="og:url" content="https://finanzasenaccion.com/">
+<link rel="canonical" href="https://somosfinanzasenaccion.es/">
+<meta property="og:url" content="https://somosfinanzasenaccion.es/">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:site" content="@BuscandolaLF">
-<meta name="theme-color" content="#08251C">
+<meta name="theme-color" content="#DED8CA">
 <link rel="icon" type="image/png" href="icon-192.png">
 <link rel="apple-touch-icon" href="apple-touch-icon.png">
 <link rel="preload" href="fonts/bricolage-grotesque-latin-opsz-normal.woff2" as="font" type="font/woff2" crossorigin>
@@ -29,8 +29,9 @@
 
 /* Concepto: la página se construye por bloques. Entran por los lados, desde el fondo hacia delante, y se apilan al bajar. */
 :root{
-  --night:#08251C;--deep:#0B3D2E;--deep-2:#11503D;--cream:#F2EEE3;--paper:#FBF9F4;
-  --mint:#7DD3A8;--mint-2:#C4F0D9;--gold:#E5B04A;--ink:#0C2219;--soft:#5F7268;
+  --night:#DED8CA;--deep:#2F6B57;--deep-2:#2F6B57;--cream:#F4F1EA;--paper:#F4F1EA;
+  --mint:#8FC2AC;--mint-2:#CFE3D8;--gold:#9C8A66;--ink:#1E2B26;--soft:#5E655F;
+  --acc:#2F6B57;--card:#D1CABA;--card-2:#C4BCA9;--greige:#DED8CA;
   --d:"Bricolage Grotesque","Segoe UI",system-ui,sans-serif;
   --b:"Instrument Sans","Segoe UI",system-ui,sans-serif;
   --m:"Plex Mono",ui-monospace,Menlo,monospace;
@@ -55,45 +56,45 @@ h1,h2,h3{font-family:var(--d);margin:0;letter-spacing:-.035em;line-height:.98}
 @media(prefers-reduced-motion:reduce){.fx{transition:none!important;transform:none!important;opacity:1!important;filter:none!important}}
 
 /* ---------- Barra ---------- */
-.nav{position:fixed;top:14px;left:50%;transform:translateX(-50%);z-index:50;display:flex;align-items:center;gap:6px;padding:7px 7px 7px 10px;border-radius:999px;background:rgba(8,37,28,.72);backdrop-filter:blur(14px) saturate(1.4);-webkit-backdrop-filter:blur(14px) saturate(1.4);box-shadow:0 0 0 1px rgba(242,238,227,.1),0 10px 30px rgba(0,0,0,.25);width:max-content;max-width:calc(100% - 24px)}
+.nav{position:fixed;top:14px;left:50%;transform:translateX(-50%);z-index:50;display:flex;align-items:center;gap:6px;padding:7px 7px 7px 10px;border-radius:999px;background:rgba(8,37,28,.72);backdrop-filter:blur(14px) saturate(1.4);-webkit-backdrop-filter:blur(14px) saturate(1.4);box-shadow:0 0 0 1px rgba(30,43,38,.1),0 10px 30px rgba(0,0,0,.25);width:max-content;max-width:calc(100% - 24px)}
 .nav .mk{display:flex;align-items:center;gap:9px;text-decoration:none;font:700 15px var(--d);padding-right:8px}
 .nav .mk img{width:30px;height:30px;border-radius:50%}
-.nav a.i{text-decoration:none;font-weight:600;font-size:14px;padding:8px 13px;border-radius:999px;color:rgba(242,238,227,.78)}
-.nav a.i:hover{background:rgba(242,238,227,.08);color:var(--cream)}
-.nav .x{display:inline-flex;align-items:center;gap:7px;text-decoration:none;font-weight:700;font-size:14px;padding:9px 15px;border-radius:999px;background:var(--mint);color:var(--night)}
+.nav a.i{text-decoration:none;font-weight:600;font-size:14px;padding:8px 13px;border-radius:999px;color:rgba(30,43,38,.78)}
+.nav a.i:hover{background:rgba(30,43,38,.08);color:var(--ink)}
+.nav .x{display:inline-flex;align-items:center;gap:7px;text-decoration:none;font-weight:700;font-size:14px;padding:9px 15px;border-radius:999px;background:var(--mint);color:var(--ink)}
 .nav .x svg{width:13px;height:13px}
 @media(max-width:820px){.nav a.i{display:none}}
 
 /* ---------- Portada ---------- */
 .hero{position:relative;min-height:100vh;min-height:100svh;display:grid;place-items:center;overflow:hidden;padding:120px 0 80px;perspective:1200px}
-.hero::before{content:"";position:absolute;inset:-20%;background:radial-gradient(40% 40% at 70% 30%,rgba(125,211,168,.20),transparent 70%),radial-gradient(35% 35% at 20% 80%,rgba(229,176,74,.10),transparent 70%)}
-.hero .grid{position:absolute;inset:0;background-image:linear-gradient(rgba(242,238,227,.05) 1px,transparent 1px),linear-gradient(90deg,rgba(242,238,227,.05) 1px,transparent 1px);background-size:64px 64px;transform:perspective(600px) rotateX(58deg) translateY(30%) scale(2.2);transform-origin:50% 100%;mask-image:linear-gradient(transparent,#000 40%,#000 70%,transparent);-webkit-mask-image:linear-gradient(transparent,#000 40%,#000 70%,transparent)}
+.hero::before{content:"";position:absolute;inset:-20%;background:radial-gradient(40% 40% at 70% 30%,rgba(143,194,172,.20),transparent 70%),radial-gradient(35% 35% at 20% 80%,rgba(156,138,102,.10),transparent 70%)}
+.hero .grid{position:absolute;inset:0;background-image:linear-gradient(rgba(30,43,38,.05) 1px,transparent 1px),linear-gradient(90deg,rgba(30,43,38,.05) 1px,transparent 1px);background-size:64px 64px;transform:perspective(600px) rotateX(58deg) translateY(30%) scale(2.2);transform-origin:50% 100%;mask-image:linear-gradient(transparent,#000 40%,#000 70%,transparent);-webkit-mask-image:linear-gradient(transparent,#000 40%,#000 70%,transparent)}
 .hero .c{position:relative;z-index:2;text-align:center;max-width:1000px;padding:0 20px}
 .hero h1{font-size:clamp(50px,9.6vw,148px);font-weight:800}
 .hero h1 .ln{display:block;overflow:visible}
 .hero h1 .ln > span{display:inline-block}
 .hero h1 .m{color:var(--mint)}
 .hero h1 .o{-webkit-text-stroke:2px var(--cream);color:transparent}
-.hero p{max-width:620px;margin:26px auto 34px;font-size:19px;color:rgba(242,238,227,.78)}
+.hero p{max-width:620px;margin:26px auto 34px;font-size:19px;color:rgba(30,43,38,.78)}
 .btns{display:flex;gap:12px;justify-content:center;flex-wrap:wrap}
 .btn{display:inline-flex;align-items:center;gap:10px;text-decoration:none;font-weight:700;font-size:15.5px;padding:16px 24px;border-radius:999px;transition:transform .2s var(--ease),box-shadow .2s}
 .btn:hover{transform:translateY(-3px)}
-.btn.p{background:var(--mint);color:var(--night);box-shadow:0 12px 40px rgba(125,211,168,.3)}
-.btn.g{box-shadow:inset 0 0 0 1.5px rgba(242,238,227,.35)}
+.btn.p{background:var(--mint);color:var(--ink);box-shadow:0 12px 40px rgba(143,194,172,.3)}
+.btn.g{box-shadow:inset 0 0 0 1.5px rgba(30,43,38,.35)}
 .btn.d{background:var(--deep);color:var(--cream)}
 
 /* Bloques flotantes que llegan desde el fondo */
 .chips{position:absolute;inset:0;z-index:1;pointer-events:none;transform-style:preserve-3d}
-.chip{position:absolute;padding:14px 18px;border-radius:18px;background:rgba(242,238,227,.06);box-shadow:inset 0 0 0 1px rgba(242,238,227,.14),0 20px 50px rgba(0,0,0,.3);backdrop-filter:blur(6px);-webkit-backdrop-filter:blur(6px);animation:fromback 1.6s var(--ease) both;animation-delay:var(--dl)}
+.chip{position:absolute;padding:14px 18px;border-radius:18px;background:rgba(30,43,38,.06);box-shadow:inset 0 0 0 1px rgba(30,43,38,.14),0 20px 50px rgba(0,0,0,.3);backdrop-filter:blur(6px);-webkit-backdrop-filter:blur(6px);animation:fromback 1.6s var(--ease) both;animation-delay:var(--dl)}
 .chip b{display:block;font:700 24px var(--d);letter-spacing:-.02em;color:var(--cream)}
 .chip span{font:500 11.5px var(--m);text-transform:uppercase;letter-spacing:.08em;color:var(--mint)}
-.chip.solid{background:var(--mint)}.chip.solid b{color:var(--night)}.chip.solid span{color:var(--deep)}
+.chip.solid{background:var(--mint)}.chip.solid b{color:var(--ink)}.chip.solid span{color:var(--deep)}
 @keyframes fromback{from{opacity:0;transform:translate3d(0,0,-900px) scale(.6);filter:blur(14px)}to{opacity:1;transform:translate3d(0,0,0);filter:none}}
 @media(max-width:820px){.chip{display:none}.chip.k{display:block;padding:9px 12px;top:84px!important;bottom:auto!important}.chip.k:first-child{left:14px!important}.chip.k:not(:first-child){right:14px!important;left:auto!important}.chip.k b{font-size:17px}}
 @media(prefers-reduced-motion:reduce){.chip{animation:none}}
 
 /* ---------- Banda de texto en movimiento ---------- */
-.band{background:var(--mint);color:var(--night);overflow:hidden;padding:18px 0;transform:rotate(-2deg) scale(1.04);margin:-10px 0 0;position:relative;z-index:3}
+.band{background:var(--mint);color:var(--ink);overflow:hidden;padding:18px 0;transform:rotate(-2deg) scale(1.04);margin:-10px 0 0;position:relative;z-index:3}
 .band.two{background:var(--cream);transform:rotate(1.5deg) scale(1.04);margin-top:-14px}
 .band .row{display:flex;gap:40px;white-space:nowrap;font:800 clamp(28px,4vw,52px) var(--d);letter-spacing:-.03em;will-change:transform}
 .band .row i{font-style:normal;color:var(--deep-2);opacity:.45}
@@ -102,7 +103,7 @@ h1,h2,h3{font-family:var(--d);margin:0;letter-spacing:-.035em;line-height:.98}
 section{position:relative;padding:120px 0}
 .sh{display:flex;justify-content:space-between;align-items:end;gap:24px;margin-bottom:48px;flex-wrap:wrap}
 .sh h2{font-size:clamp(38px,6vw,84px);font-weight:800;max-width:780px;margin-top:14px}
-.sh p{max-width:380px;margin:0;color:rgba(242,238,227,.7)}
+.sh p{max-width:380px;margin:0;color:rgba(30,43,38,.7)}
 .light{background:var(--paper);color:var(--ink)}
 .light .lab{color:var(--deep-2)}
 .light .sh p{color:var(--soft)}
@@ -119,11 +120,11 @@ a.blk:hover{box-shadow:0 2px 4px rgba(12,34,25,.08),0 30px 60px rgba(12,34,25,.1
 .blk .go{margin-top:auto;font-weight:700;color:var(--deep)}
 .blk.big{grid-column:span 7;grid-row:span 2;background:var(--deep);color:var(--cream);min-height:540px;padding:40px}
 .blk.big h3{font-size:clamp(38px,4.4vw,64px)}
-.blk.big p{color:rgba(242,238,227,.78);font-size:18px;max-width:520px}
+.blk.big p{color:rgba(30,43,38,.78);font-size:18px;max-width:520px}
 .blk.big .go{color:var(--mint)}
 .blk.big .ill{position:absolute;right:-40px;bottom:-40px;width:360px;opacity:.95}
 .blk.big .pills{display:flex;flex-wrap:wrap;gap:8px;max-width:520px}
-.blk.big .pills span{font-size:13.5px;font-weight:600;padding:8px 13px;border-radius:999px;background:rgba(242,238,227,.08);box-shadow:inset 0 0 0 1px rgba(242,238,227,.16)}
+.blk.big .pills span{font-size:13.5px;font-weight:600;padding:8px 13px;border-radius:999px;background:rgba(30,43,38,.08);box-shadow:inset 0 0 0 1px rgba(30,43,38,.16)}
 .blk.s5{grid-column:span 5}.blk.s4{grid-column:span 4}.blk.s6{grid-column:span 6}
 .blk.pend{background:transparent;box-shadow:none;border:2px dashed #CFC7B2}
 @media(max-width:900px){.blk.big,.blk.s5,.blk.s4,.blk.s6{grid-column:span 12}.blk.big{min-height:460px}.blk.big .ill{width:240px}}
@@ -131,14 +132,14 @@ a.blk:hover{box-shadow:0 2px 4px rgba(12,34,25,.08),0 30px 60px rgba(12,34,25,.1
 /* Quiénes somos: dos bloques que se juntan en el centro al bajar */
 .duo{display:grid;grid-template-columns:1fr 1fr;gap:18px}
 .bro{border-radius:var(--r);padding:38px;min-height:380px;display:flex;flex-direction:column;will-change:transform}
-.bro.a{background:var(--mint);color:var(--night)}
-.bro.b{background:var(--cream);color:var(--night)}
+.bro.a{background:var(--mint);color:var(--ink)}
+.bro.b{background:var(--cream);color:var(--ink)}
 .bro .big{font:800 clamp(120px,14vw,200px)/.8 var(--d);letter-spacing:-.06em;opacity:.9}
 .bro h3{font-size:32px;margin:24px 0 10px}
 .bro p{margin:0;opacity:.8}
 .bro ul{list-style:none;margin:18px 0 0;padding:0;display:flex;flex-wrap:wrap;gap:8px}
 .bro li{font-size:13.5px;font-weight:600;padding:7px 12px;border-radius:999px;background:rgba(8,37,28,.08)}
-.bro.pend{background:transparent;border:2px dashed rgba(242,238,227,.3);color:var(--cream)}
+.bro.pend{background:transparent;border:2px dashed rgba(30,43,38,.3);color:var(--cream)}
 .meet{text-align:center;margin-top:34px;font:800 clamp(26px,3.4vw,44px) var(--d);letter-spacing:-.03em}
 .meet span{color:var(--mint)}
 @media(max-width:760px){.duo{grid-template-columns:1fr}}
@@ -148,25 +149,25 @@ a.blk:hover{box-shadow:0 2px 4px rgba(12,34,25,.08),0 30px 60px rgba(12,34,25,.1
 .stack{position:relative}
 .card{position:sticky;top:110px;margin-bottom:28px;border-radius:var(--r);padding:44px;min-height:340px;display:grid;grid-template-columns:240px 1fr;gap:36px;align-items:center;transform-origin:50% 0;will-change:transform;box-shadow:0 -20px 50px rgba(0,0,0,.25)}
 .card:nth-child(4n+1){background:var(--cream);color:var(--ink)}
-.card:nth-child(4n+2){background:var(--mint);color:var(--night)}
+.card:nth-child(4n+2){background:var(--mint);color:var(--ink)}
 .card:nth-child(4n+3){background:#fff;color:var(--ink)}
-.card:nth-child(4n+4){background:var(--gold);color:var(--night)}
+.card:nth-child(4n+4){background:var(--gold);color:var(--ink)}
 .card .yr{font:800 clamp(64px,8vw,120px)/.85 var(--d);letter-spacing:-.05em}
 .card h3{font-size:clamp(28px,3vw,40px);margin-bottom:12px}
 .card p{margin:0;font-size:18px;opacity:.85;max-width:620px}
-.card.pend{background:var(--deep-2)!important;color:var(--cream)!important;border:2px dashed rgba(242,238,227,.35)}
+.card.pend{background:var(--deep-2)!important;color:var(--cream)!important;border:2px dashed rgba(30,43,38,.35)}
 .quote{margin-top:80px;text-align:center;font:800 clamp(36px,6vw,88px)/1 var(--d);letter-spacing:-.04em}
 .quote em{font-style:normal;color:var(--mint)}
-.quote small{display:block;margin-top:18px;font:500 13px var(--m);letter-spacing:.12em;text-transform:uppercase;color:rgba(242,238,227,.6)}
+.quote small{display:block;margin-top:18px;font:500 13px var(--m);letter-spacing:.12em;text-transform:uppercase;color:rgba(30,43,38,.6)}
 @media(max-width:760px){.card{grid-template-columns:1fr;gap:12px;padding:30px;top:90px;min-height:0}}
 
 /* Cifras */
-.nums{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}
+.nums{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
 .num{border-radius:var(--r);padding:30px 26px;background:#fff;box-shadow:0 18px 40px rgba(12,34,25,.08)}
 .num b{display:block;font:800 clamp(42px,4.6vw,68px)/1 var(--d);letter-spacing:-.05em;color:var(--deep);font-variant-numeric:tabular-nums}
 .num span{display:block;margin-top:12px;color:var(--soft);font-size:15px}
-.num:nth-child(2){background:var(--deep)}.num:nth-child(2) b{color:var(--mint)}.num:nth-child(2) span{color:rgba(242,238,227,.75)}
-@media(max-width:900px){.nums{grid-template-columns:1fr 1fr}}
+.num:nth-child(1){background:var(--deep)}.num:nth-child(1) b{color:var(--mint)}.num:nth-child(1) span{color:rgba(30,43,38,.75)}
+@media(max-width:900px){.nums{grid-template-columns:1fr}}
 
 /* Lo que usamos */
 .refs{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
@@ -189,7 +190,7 @@ a.blk:hover{box-shadow:0 2px 4px rgba(12,34,25,.08),0 30px 60px rgba(12,34,25,.1
 
 /* Hipoteca: bloque que se abre al bajar */
 .open{padding:40px 0 120px}
-.jose{position:relative;border-radius:40px;background:var(--mint);color:var(--night);padding:clamp(34px,6vw,80px);overflow:hidden;will-change:clip-path}
+.jose{position:relative;border-radius:40px;background:var(--mint);color:var(--ink);padding:clamp(34px,6vw,80px);overflow:hidden;will-change:clip-path}
 .jose h2{font-size:clamp(40px,6.4vw,96px);font-weight:800;max-width:900px}
 .jose p{font-size:19px;max-width:620px;margin:22px 0 30px;color:#163D2F}
 .jose .fine{font-size:13.5px;margin:22px 0 0;color:#2D5546}
@@ -198,18 +199,94 @@ a.blk:hover{box-shadow:0 2px 4px rgba(12,34,25,.08),0 30px 60px rgba(12,34,25,.1
 
 /* Canales */
 .chan{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
-.ch{border-radius:22px;padding:24px;text-decoration:none;background:rgba(242,238,227,.06);box-shadow:inset 0 0 0 1px rgba(242,238,227,.12);transition:background .2s}
-a.ch:hover{background:rgba(125,211,168,.14)}
+.ch{border-radius:22px;padding:24px;text-decoration:none;background:rgba(30,43,38,.06);box-shadow:inset 0 0 0 1px rgba(30,43,38,.12);transition:background .2s}
+a.ch:hover{background:rgba(143,194,172,.14)}
 .ch .k{font:600 11px var(--m);letter-spacing:.1em;text-transform:uppercase;color:var(--mint)}
 .ch b{display:block;font:800 22px var(--d);letter-spacing:-.02em;margin:10px 0 2px}
-.ch span{font-size:14px;color:rgba(242,238,227,.6)}
-.ch.pend{box-shadow:none;border:2px dashed rgba(242,238,227,.25);background:none}
+.ch span{font-size:14px;color:rgba(30,43,38,.6)}
+.ch.pend{box-shadow:none;border:2px dashed rgba(30,43,38,.25);background:none}
 @media(max-width:900px){.chan{grid-template-columns:1fr 1fr}}
 
-footer{padding:30px 0 60px;color:rgba(242,238,227,.55);font-size:14px;border-top:1px solid rgba(242,238,227,.1)}
+footer{padding:30px 0 60px;color:rgba(30,43,38,.55);font-size:14px;border-top:1px solid rgba(30,43,38,.1)}
 footer .wrap{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}
 footer a{color:var(--mint);font-weight:600}
 :focus-visible{outline:3px solid var(--gold);outline-offset:3px;border-radius:10px}
+
+
+/* En qué invertimos */
+.inv{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}
+.iv{border-radius:var(--r);padding:30px 26px;min-height:300px;display:flex;flex-direction:column;gap:12px}
+.iv .no{font:600 12px var(--m);letter-spacing:.12em;opacity:.7}
+.iv svg{width:46px;height:46px;margin:6px 0 4px}
+.iv h3{font-size:30px;font-weight:800}
+.iv p{margin:0;opacity:.82}
+.iv:nth-child(1){background:var(--mint);color:var(--ink)}
+.iv:nth-child(2){background:var(--cream);color:var(--ink)}
+.iv:nth-child(3){background:var(--gold);color:var(--ink)}
+.iv:nth-child(4){background:var(--deep-2);color:var(--cream);box-shadow:inset 0 0 0 1px rgba(30,43,38,.15)}
+@media(max-width:900px){.inv{grid-template-columns:1fr 1fr}}
+@media(max-width:560px){.inv{grid-template-columns:1fr}.iv{min-height:0}}
+.chan.solo{grid-template-columns:1fr}
+.chan.solo .ch{display:flex;align-items:center;justify-content:space-between;gap:20px;padding:34px 36px;background:var(--mint);color:var(--ink);box-shadow:none}
+.chan.solo .ch b{font-size:clamp(28px,4vw,46px);margin:6px 0 0}
+.chan.solo .ch .k{color:var(--deep)}
+.chan.solo .ch span{color:var(--deep);font-size:16px}
+.chan.solo .ch .arr{font:800 clamp(34px,5vw,60px) var(--d)}
+
+.chan.duo2{grid-template-columns:repeat(var(--n,2),1fr);gap:18px}
+.chan.duo2 .ch{padding:34px 32px;box-shadow:none;color:var(--ink)}
+.chan.duo2 .ch:nth-child(1){background:var(--mint)}
+.chan.duo2 .ch:nth-child(2){background:var(--gold)}
+.chan.duo2 .ch:nth-child(3){background:var(--cream)}
+.chan.duo2 .ch .k{color:var(--deep)}
+.chan.duo2 .ch b{font-size:clamp(28px,3.4vw,42px);margin:10px 0 4px}
+.chan.duo2 .ch span{color:#163D2F;font-size:16px}
+@media(max-width:900px){.chan.duo2{grid-template-columns:1fr}}
+
+/* ---------- Portada: texto con palabra que rota + baraja de tarjetas en 3D ---------- */
+.hero.h2{display:block;place-items:initial;padding:110px 0 70px}
+.hgrid{position:relative;z-index:2;display:grid;grid-template-columns:1.08fr .92fr;gap:40px;align-items:center;min-height:calc(100svh - 180px)}
+.htext h1{font-size:clamp(44px,6vw,90px);font-weight:800;margin-top:22px;text-align:left}
+.htext h1 .ln{display:block}
+.htext h1 .dim{color:rgba(30,43,38,.55)}
+.htext h1 .rot{position:relative;height:1.04em;overflow:hidden;white-space:nowrap}
+.htext h1 .rot .w{display:inline-block;color:var(--mint);transition:transform .55s var(--ease),opacity .4s ease,filter .4s}
+.htext h1 .rot .w.out{transform:translateY(-105%) rotateX(60deg);opacity:0;filter:blur(4px)}
+.htext h1 .rot .w.in{transform:translateY(105%) rotateX(-60deg);opacity:0;filter:blur(4px);transition:none}
+.htext p{margin:24px 0 32px;max-width:560px;font-size:19px;color:rgba(30,43,38,.78);text-align:left}
+.htext .btns{justify-content:flex-start}
+.strip{display:flex;gap:0;margin-top:30px;border-top:1px solid rgba(30,43,38,.14);max-width:400px}
+.strip div{flex:1;padding:16px 16px 0 0}
+.strip div+div{padding-left:16px;border-left:1px solid rgba(30,43,38,.14)}
+.strip b{display:block;font:800 26px var(--d);letter-spacing:-.03em}
+.strip span{font:500 11px var(--m);letter-spacing:.1em;text-transform:uppercase;color:var(--mint)}
+.deck{position:relative;height:500px;perspective:1400px;transform-style:preserve-3d}
+.dk{position:absolute;left:8%;top:40px;width:80%;max-width:420px;height:400px;border-radius:30px;padding:30px;display:flex;flex-direction:column;
+  box-shadow:0 30px 70px rgba(0,0,0,.4);transition:transform .9s var(--ease),opacity .7s ease,filter .7s ease;will-change:transform;backface-visibility:hidden}
+.dk .top{display:flex;justify-content:space-between;font:600 11.5px var(--m);letter-spacing:.12em;text-transform:uppercase;opacity:.75}
+.dk svg.ic{width:58px;height:58px;margin:26px 0 10px}
+.dk .cat{font:800 40px/1 var(--d);letter-spacing:-.04em}
+.dk .big{font:800 30px var(--d);letter-spacing:-.03em;margin-top:auto}
+.dk .sub{opacity:.78;font-size:15.5px;margin-top:4px}
+.dk .bars{display:flex;align-items:flex-end;gap:6px;height:44px;margin-top:18px}
+.dk .bars i{flex:1;border-radius:4px;background:currentColor;opacity:.18}
+.dk.c0{background:var(--mint);color:var(--ink)}
+.dk.c1{background:var(--cream);color:var(--ink)}
+.dk.c2{background:var(--gold);color:var(--ink)}
+.dk.c3{background:#14614A;color:var(--cream);box-shadow:inset 0 0 0 1px rgba(30,43,38,.18),0 30px 70px rgba(0,0,0,.4)}
+.dk.gone{transform:translate3d(-120%,30px,60px) rotate(-16deg)!important;opacity:0!important}
+@media(max-width:900px){
+  .hgrid{grid-template-columns:1fr;min-height:0;gap:10px}
+  .hero.h2{padding:120px 0 60px}
+  .deck{height:360px;margin-top:10px}
+  .dk{left:6%;width:78%;height:290px;top:20px;padding:24px;border-radius:24px}
+  .dk svg.ic{width:44px;height:44px;margin:16px 0 6px}
+  .dk .cat{font-size:32px}.dk .big{font-size:24px}
+  .htext h1{font-size:clamp(40px,11.5vw,60px)}
+  .htext p{font-size:17px}
+  .strip b{font-size:21px}
+}
+@media(prefers-reduced-motion:reduce){.dk,.htext h1 .rot .w{transition:none}}
 
 /* ---------- Móvil: menos efectos ligados al scroll, nada que se tape ---------- */
 @media(max-width:760px){
@@ -245,6 +322,201 @@ footer a{color:var(--mint);font-weight:600}
   .ch b{font-size:18px}
   .ch{padding:18px}
 }
+
+/* ---------- Paleta greige y verde: ajustes de contraste ---------- */
+body{color:var(--ink);background:var(--greige)}
+.lab,.hero h1 .m,.htext h1 .rot .w,.strip span,.quote em,.meet span,.ch .k,footer a{color:var(--acc)}
+.light .lab{color:var(--acc)}
+.nav{background:rgba(244,241,234,.86);box-shadow:0 0 0 1px rgba(30,43,38,.1),0 10px 30px rgba(30,43,38,.12)}
+.nav .x,.btn.p{background:var(--acc);color:var(--cream)}
+.btn.p{box-shadow:0 12px 34px rgba(47,107,87,.28)}
+.hero::before{background:radial-gradient(40% 40% at 72% 32%,rgba(143,194,172,.45),transparent 70%),radial-gradient(35% 35% at 18% 85%,rgba(156,138,102,.22),transparent 70%)}
+.hero .grid{opacity:.8}
+.band{background:var(--acc);color:var(--cream)}
+.band .row i{color:var(--mint-2);opacity:.8}
+.band.two{background:var(--cream);color:var(--ink)}
+.band.two .row i{color:var(--acc);opacity:.6}
+.blk,.num,.ref{background:var(--greige)}
+.blk.big{background:var(--acc);color:var(--cream)}
+.blk.big p{color:rgba(244,241,234,.85)}
+.blk.big .go{color:var(--mint-2)}
+.blk.big .pills span{background:rgba(244,241,234,.1);box-shadow:inset 0 0 0 1px rgba(244,241,234,.22)}
+.num:nth-child(1){background:var(--acc)}
+.num:nth-child(1) b{color:var(--mint-2)}
+.num:nth-child(1) span{color:rgba(244,241,234,.82)}
+.num b{color:var(--acc)}
+.story{background:var(--card)}
+.card:nth-child(4n+1){background:var(--cream)}
+.card:nth-child(4n+3){background:var(--mint-2)}
+.card{box-shadow:0 -14px 40px rgba(30,43,38,.14)}
+.iv:nth-child(4){background:var(--acc);color:var(--cream);box-shadow:none}
+.bro.b{background:var(--cream)}
+.jose{background:var(--mint)}
+.jose p{color:var(--ink)}
+.dk{box-shadow:0 28px 60px rgba(30,43,38,.25)}
+.dk.c3{background:var(--acc);color:var(--cream);box-shadow:0 28px 60px rgba(30,43,38,.25)}
+.chan.duo2 .ch span{color:var(--ink)}
+.chan.duo2 .ch:nth-child(3){background:var(--cream)}
+.ch{background:rgba(244,241,234,.5)}
+.blk.pend,.ref.pend{border-color:var(--card-2)}
+footer{color:var(--soft);border-top-color:rgba(30,43,38,.12)}
+@media(max-width:760px){.nav{background:rgba(244,241,234,.97)}}
+
+@media(max-width:760px){
+  .jose .house{display:none}
+  .jose{clip-path:none!important}
+  .dk .top span:first-child{display:none}
+  .dk .top{justify-content:flex-end}
+  .dk .cat{margin-bottom:10px}
+  .dk svg.ic{margin-top:4px}
+  .btn{padding:15px 22px}
+}
+
+/* Promociones */
+.ref .gift{display:flex;flex-direction:column;gap:6px;padding:18px 20px;border-radius:20px;background:var(--acc);color:var(--cream);font-weight:400}
+.ref .gift .gl{display:flex;align-items:center;gap:8px;font:600 11.5px var(--m);letter-spacing:.12em;text-transform:uppercase;color:var(--mint-2)}
+.ref .gift .gl svg{width:18px;height:18px}
+.ref .gift b{font:800 clamp(21px,2vw,26px)/1.12 var(--d);letter-spacing:-.02em}
+.ref .gift .cad{align-self:flex-start;margin-top:4px;font:600 11.5px var(--m);letter-spacing:.06em;text-transform:uppercase;padding:5px 9px;border-radius:999px;background:rgba(244,241,234,.16)}
+.ref p{color:var(--soft)}
+.ref .act{flex-direction:column;align-items:stretch}
+.ref .act .btn{justify-content:center;text-align:center;border:0;cursor:pointer;font-family:inherit}
+.ref .act .btn.ok{background:var(--ink)}
+.ref .code{display:flex;justify-content:center;align-items:center;gap:8px;border-color:var(--acc);color:var(--acc)}
+.ref .code span{font:600 10.5px var(--m);letter-spacing:.1em;text-transform:uppercase;opacity:.7}
+.ref .code.ok{background:var(--mint-2);border-style:solid}
+
+@media(min-width:601px){.refs.two{grid-template-columns:1fr 1fr}}
+
+@media(min-width:1101px){.refs.four{grid-template-columns:repeat(4,1fr);gap:16px}.refs.four .ref{padding:24px}.refs.four .ref .gift b{font-size:20px}}
+
+.ref .code{white-space:nowrap}
+@media(min-width:1101px){.refs.four .ref .code{flex-direction:column;gap:2px;padding:9px 12px;border-radius:18px}.refs.four .ref .code span{white-space:normal}}
+
+@media(min-width:1101px){.refs.four .ref .code{position:relative;padding-right:30px;padding-left:30px}.refs.four .ref .code i{position:absolute;right:12px;top:50%;transform:translateY(-50%)}}
+
+/* Dónde estoy: barra de progreso y sección marcada */
+.prog{position:fixed;top:0;left:0;right:0;height:4px;z-index:60;background:rgba(30,43,38,.08)}
+.prog i{display:block;height:100%;width:100%;transform-origin:0 50%;transform:scaleX(0);background:linear-gradient(90deg,var(--mint),var(--acc));border-radius:0 4px 4px 0}
+.nav a.i{position:relative;transition:background .25s,color .25s}
+.nav a.i.act{background:var(--mint-2);color:var(--acc)}
+.mkt{position:relative;display:inline-grid}
+.mkt>span{grid-area:1/1;transition:opacity .35s ease,transform .45s var(--ease);white-space:nowrap}
+.mkt .where{opacity:0;transform:translateY(60%);color:var(--acc)}
+@media(max-width:820px){
+  .nav.has-where .mkt .brand{opacity:0;transform:translateY(-60%)}
+  .nav.has-where .mkt .where{opacity:1;transform:none}
+  .nav .mkt{min-width:150px}
+}
+
+/* Promociones compactas: cupones con la cifra en grande + lista */
+#refs{display:block}
+.tickets{display:grid;gap:14px}
+.tk{display:grid;grid-template-columns:190px 1fr auto;align-items:stretch;border-radius:22px;background:var(--greige);overflow:hidden;position:relative}
+.tk .stub{position:relative;display:flex;flex-direction:column;justify-content:center;gap:4px;padding:20px 22px;color:var(--cream)}
+.tk.t0 .stub{background:var(--acc)}.tk.t1 .stub{background:var(--gold);color:var(--ink)}.tk.t2 .stub{background:#5E8C78}
+.tk .stub::after{content:"";position:absolute;right:-1px;top:10px;bottom:10px;border-right:3px dotted var(--paper)}
+.tk::before,.tk::after{content:"";position:absolute;left:181px;width:18px;height:18px;border-radius:50%;background:var(--paper);z-index:1}
+.tk::before{top:-9px}.tk::after{bottom:-9px}
+.tk .gl{font:600 10.5px var(--m);letter-spacing:.12em;text-transform:uppercase;opacity:.8}
+.tk .stub b{font:800 clamp(30px,3.2vw,42px)/1 var(--d);letter-spacing:-.04em}
+.tk .cad{font:600 10.5px var(--m);text-transform:uppercase;letter-spacing:.06em;opacity:.85}
+.tk .tb{padding:18px 22px;display:flex;flex-direction:column;justify-content:center;gap:4px;min-width:0}
+.tk .tn{display:flex;align-items:baseline;gap:10px;flex-wrap:wrap}
+.tk h3{font-size:24px}
+.tk .cat,.row .cat{font:600 10.5px var(--m);text-transform:uppercase;letter-spacing:.1em;color:var(--soft)}
+.tk .cond{margin:0;font-weight:600;color:var(--ink);font-size:15.5px}
+.tk .why{margin:0;color:var(--soft);font-size:14.5px}
+.tk .ta{display:flex;flex-direction:column;justify-content:center;gap:8px;padding:18px 22px 18px 0;min-width:230px}
+.tk .ta .btn{justify-content:center;text-align:center;padding:12px 18px;font-size:14.5px;border:0;cursor:pointer;font-family:inherit}
+.code{display:flex;justify-content:center;align-items:center;gap:8px;font:600 13px var(--m);border:1.5px dashed var(--acc);border-radius:999px;padding:9px 14px;background:none;color:var(--acc);cursor:pointer;white-space:nowrap}
+.code span{font:600 10px var(--m);letter-spacing:.1em;text-transform:uppercase;opacity:.7}
+.code.ok{background:var(--mint-2);border-style:solid}
+.btn.cp.ok{background:var(--ink)}
+.also{margin-top:26px}
+.alsoh{font:600 12px var(--m);letter-spacing:.14em;text-transform:uppercase;color:var(--acc);margin-bottom:12px}
+.rows{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.row{display:grid;grid-template-columns:44px 1fr auto;gap:14px;align-items:center;padding:14px 16px;border-radius:18px;background:rgba(30,43,38,.04);box-shadow:inset 0 0 0 1px rgba(30,43,38,.08)}
+.row .lg{width:44px;height:44px;border-radius:13px;display:grid;place-items:center;color:#fff;font:800 15px var(--d)}
+.row h3{font-size:18px;display:flex;align-items:baseline;gap:8px;flex-wrap:wrap}
+.row p{margin:2px 0 0;color:var(--soft);font-size:14px;line-height:1.4}
+.row .ra{display:flex;flex-direction:column;gap:6px;align-items:stretch}
+.row .code{padding:7px 10px;font-size:12px;border-radius:12px;flex-direction:column;gap:0}
+.mini{display:inline-flex;justify-content:center;text-decoration:none;font-weight:700;font-size:14px;padding:10px 16px;border-radius:999px;background:var(--acc);color:var(--cream);white-space:nowrap}
+@media(max-width:980px){.tk{grid-template-columns:150px 1fr}.tk::before,.tk::after{left:141px}.tk .ta{grid-column:1/-1;flex-direction:row;flex-wrap:wrap;padding:0 22px 18px}.tk .ta>*{flex:1 1 auto}.rows{grid-template-columns:1fr}}
+@media(max-width:560px){
+  .tk{grid-template-columns:1fr}
+  .tk .stub{flex-direction:row;align-items:baseline;gap:12px;padding:16px 20px}
+  .tk .stub::after{right:16px;left:16px;top:auto;bottom:-1px;border-right:0;border-bottom:3px dotted var(--paper)}
+  .tk::before,.tk::after{display:none}
+  .tk .ta{flex-direction:column;padding:0 20px 18px}
+  .tk .stub{justify-content:flex-start}
+  .row{grid-template-columns:40px 1fr auto;padding:12px 14px;gap:12px}
+  .row .lg{width:40px;height:40px}
+  .row.hascode{grid-template-columns:40px 1fr}
+  .row.hascode .ra{grid-column:1/-1;flex-direction:row;flex-wrap:wrap}
+  .row.hascode .ra>*{flex:1 1 auto}
+  .mini{padding:9px 14px;font-size:13.5px}
+}
+
+.row.wide{grid-column:1/-1;grid-template-columns:auto 1fr auto 96px}
+.row .movil{width:96px;height:auto;filter:drop-shadow(0 12px 18px rgba(30,43,38,.25));transform:rotate(8deg);margin:-6px 0}
+@media(max-width:560px){.row.wide{grid-template-columns:40px 1fr 70px}.row.wide .movil{width:70px;grid-row:1;grid-column:3}.row.wide .ra{grid-row:2}}
+
+/* Mini calculadora de la portada */
+.mini-calc{margin-top:30px;max-width:540px;padding:20px 22px;border-radius:24px;background:rgba(244,241,234,.78);box-shadow:inset 0 0 0 1px rgba(30,43,38,.1),0 18px 40px rgba(30,43,38,.08);backdrop-filter:blur(6px);-webkit-backdrop-filter:blur(6px)}
+.mini-calc label{display:block;font:600 12px var(--m);letter-spacing:.1em;text-transform:uppercase;color:var(--acc);margin-bottom:10px}
+.mc-in{display:flex;align-items:center;gap:10px;background:#fff;border-radius:16px;padding:6px 16px;box-shadow:inset 0 0 0 1.5px rgba(47,107,87,.35)}
+.mc-in:focus-within{box-shadow:inset 0 0 0 2px var(--acc)}
+.mc-in input{flex:1;min-width:0;border:0;outline:0;background:none;font:800 30px var(--d);letter-spacing:-.02em;color:var(--ink);padding:6px 0}
+.mc-in input::placeholder{color:rgba(30,43,38,.25)}
+.mc-in span{font-weight:600;color:var(--soft)}
+.mc-res{margin-top:14px;min-height:62px}
+.mc-k{color:var(--soft);font-size:15px}
+.mc-res .big{display:block;font:800 clamp(26px,3vw,36px)/1.05 var(--d);letter-spacing:-.03em;color:var(--ink)}
+.mc-res .big em{font-style:normal;color:var(--acc)}
+.mc-res .sm{display:block;margin-top:6px;font-size:13.5px;color:var(--soft)}
+.mc-go{display:inline-flex;margin-top:12px;font-weight:700;color:var(--acc);text-decoration:none}
+.mc-go:hover{text-decoration:underline}
+@media(max-width:760px){.mini-calc{padding:16px}.mc-in input{font-size:26px}}
+
+.tk .tn{align-items:center}
+.tl{width:32px;height:32px;border-radius:9px;display:grid;place-items:center;color:#fff;font:800 12px var(--d);flex:none}
+.lg.img,.tl.img{background:#fff!important;box-shadow:inset 0 0 0 1px rgba(30,43,38,.1);padding:5px}
+.lg.img img,.tl.img img{width:100%;height:100%;object-fit:contain;display:block}
+
+/* Mejores hipotecas del mes */
+.mh{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.mo{border-radius:24px;padding:24px;display:flex;flex-direction:column;gap:10px;background:var(--greige);position:relative;overflow:hidden}
+.mo .ty{align-self:flex-start;font:600 11px var(--m);letter-spacing:.12em;text-transform:uppercase;padding:6px 10px;border-radius:999px;background:var(--mint-2);color:var(--acc)}
+.mo.t-fija .ty{background:var(--acc);color:var(--cream)}.mo.t-variable .ty{background:var(--gold);color:var(--ink)}
+.mo .bk{font:800 24px/1.1 var(--d);letter-spacing:-.02em}
+.mo .pr{font-size:14px;color:var(--soft);margin-top:-6px}
+.mo .rate{display:flex;align-items:baseline;gap:10px;margin-top:6px}
+.mo .rate b{font:800 46px/1 var(--d);letter-spacing:-.04em;color:var(--acc)}
+.mo .rate span{font:600 12px var(--m);text-transform:uppercase;letter-spacing:.08em;color:var(--soft)}
+.mo .tin{font-size:15px;font-weight:600}
+.mo ul{list-style:none;margin:4px 0 0;padding:0;display:grid;gap:6px;font-size:14px;color:var(--soft)}
+.mo li{display:flex;gap:8px}
+.mo li::before{content:"";flex:none;width:6px;height:6px;border-radius:50%;background:var(--mint);margin-top:8px}
+.mo a.src{margin-top:auto;padding-top:8px;font-size:13.5px;font-weight:600;color:var(--acc)}
+.mh-foot{margin-top:18px;display:flex;justify-content:space-between;align-items:center;gap:16px;flex-wrap:wrap;font-size:13.5px;color:var(--soft)}
+.mh-foot span{max-width:640px}
+@media(max-width:900px){.mh{grid-template-columns:1fr}}
+
+.mh-aviso{display:flex;gap:12px;align-items:flex-start;margin:-14px 0 20px;padding:14px 18px;border-radius:16px;background:var(--mint-2);color:var(--ink);font-size:14.5px;line-height:1.5}
+.mh-aviso svg{flex:none;width:20px;height:20px;color:var(--acc);margin-top:1px}
+.mh-aviso a{font-weight:700;color:var(--acc);white-space:nowrap}
+
+/* Logos originales: caja blanca que se adapta a logos anchos */
+.lg.img,.tl.img{display:flex;align-items:center;justify-content:center;overflow:hidden;width:auto;min-width:0;max-width:130px;padding:6px 10px;box-sizing:border-box}
+.lg.img img,.tl.img img{display:block;width:auto;max-width:110px;object-fit:contain}
+.tl.img img{height:22px;max-height:22px}
+.lg.img img{height:30px;max-height:30px}
+.row{grid-template-columns:auto 1fr auto}
+.row .lg.img{height:44px}
+.tl.img{height:32px;padding:5px 8px}
+@media(max-width:560px){.row{grid-template-columns:auto 1fr auto}.row.hascode{grid-template-columns:auto 1fr}.row.wide{grid-template-columns:auto 1fr 64px}.lg.img{max-width:96px;height:38px!important;padding:5px 8px}.lg.img img{height:22px;max-height:22px;max-width:80px}.row.wide .movil{width:64px}}
 </style>
 </head>
 <body>
@@ -269,9 +541,9 @@ const NOSOTROS = [
 
 /* Nuestra historia, de más antiguo a más reciente. */
 const HISTORIA = [
-  {cuando:'[Año]', titulo:'Empezamos a ordenar nuestro dinero', texto:'[Cómo empezasteis: qué os hizo poneros en serio con vuestras finanzas]', pendiente:true},
+  {cuando:'2020', titulo:'Empezamos a ordenar nuestro dinero', texto:'Aplicamos a nuestras finanzas lo mismo que hacemos en el trabajo: medir qué entra y qué sale, ordenarlo y decidir con números.'},
   {cuando:'2024', titulo:'Nace @BuscandolaLF', texto:'Empezamos a contar en X lo que hacemos con nuestro dinero, con números reales y sin vender humo.'},
-  {cuando:'2025', titulo:'La primera vivienda', texto:'Un piso de 128.000 €. El banco se echa atrás el día antes de firmar y, en el último momento, el bróker consigue una fija al 2,30 % financiando el 90 % y sin vinculaciones. El hilo con el paso a paso pasó de las 700.000 visualizaciones.'},
+  {cuando:'2025', titulo:'La primera vivienda', texto:'Un piso de 128.000 €. El banco se echa atrás el día antes de firmar y, en el último momento, el bróker consigue una fija al 2,30 % financiando el 90 % y sin vinculaciones.'},
   {cuando:'2025', titulo:'Comprar para alquilar, vivir de alquiler', texto:'Desde septiembre el piso está alquilado por habitaciones y su dueño vive de alquiler. La vivienda como inversión, no como destino.'},
   {cuando:'2026', titulo:'Finanzas en Acción', texto:'Las calculadoras de vivienda, El Club de la Hipoteca en X y la newsletter de los viernes. Todo con el mismo criterio: números claros, con su fuente, para que decidas tú.'},
 ];
@@ -279,9 +551,16 @@ const CITA = {texto:'«Comprar para alquilar, vivir de alquiler.»', firma:'Fina
 
 /* Productos que usamos. Categorías libres: los filtros se crean solos. */
 const REFERIDOS = [
-  {nombre:'Indexa Capital', cat:'Inversión', ini:'IC', color:'#1F4E8C', porque:'Los dos somos clientes desde hace más de 3 años: fondos indexados, comisiones bajas y cero tiempo de gestión.', ventaja:'[Importe gestionado sin comisiones y plazo, p. ej. 15.000 € durante X meses]', url:'', codigo:'', pendiente:true},
-  {nombre:'Plan de pensiones de Indexa', cat:'Inversión', ini:'IP', color:'#2F6FB0', porque:'Para la jubilación, con la misma filosofía indexada y de bajo coste.', ventaja:'[Lo que gana quien se apunta]', url:'', codigo:'', pendiente:true},
-  {nombre:'Revolut', cat:'Banco', ini:'R', color:'#10261E', porque:'Para comprar acciones, ETF y bitcoin desde el móvil.', ventaja:'[Lo que gana quien se apunta]', url:'', codigo:'', pendiente:true},
+  /* Promociones. Campos: logo (ruta a la imagen, opcional; si no hay, salen las iniciales), regalo (va en grande), caduca (opcional, p. ej. '31 de diciembre de 2026'), url y/o codigo, boton (texto del botón, opcional). */
+  {nombre:'iGraal', logo:'logos/igraal.png', cifra:'10 €', cat:'Cashback', ini:'iG', color:'#9C8A66', porque:'Lo usamos para ganar cashback en nuestras compras online.', ventaja:'10 € al registrarte con nuestro enlace', caduca:'', url:'https://es.igraal.com/padrinazgo?padrino=gjAZDKmN&utm_medium=inf&utm_source=premium', codigo:''},
+  {nombre:'BBVA', logo:'logos/bbva.svg', cifra:'50 € + 400 €', cat:'Banco', ini:'B', color:'#2F6B57', porque:'Nuestra cuenta del día a día.', ventaja:'Hasta 50 € por pagar con la tarjeta de débito y hasta 400 € por traer la nómina o tus ahorros', caduca:'', url:'', codigo:'53340042299915', boton:'Abre tu cuenta en BBVA y usa nuestro código'},
+  {nombre:'Santander', logo:'logos/santander.svg', cat:'Banco', ini:'S', color:'#9C8A66', porque:'Hazte cliente con uno de nuestros códigos del Plan Amigo: el de la campaña 840 o el de la campaña iPhone 18 Pro.', ventaja:'', caduca:'', url:'', codigos:[{etq:'Campaña 840',codigo:'MGM840-GJR60'},{etq:'Campaña iPhone 18 Pro',codigo:'MGMIPHONE18-QP7D2'}], boton:'', img:'movil'},
+  {nombre:'MyInvestor', logo:'logos/myinvestor.png', cifra:'25 €', cat:'Inversión', ini:'MI', color:'#5E8C78', porque:'Donde tenemos parte de nuestros ahorros e inversiones.', ventaja:'25 € al abrir tu cuenta si traes 1.000 €, contratas un depósito o inviertes 100 €', caduca:'', url:'https://newapp.myinvestor.es/do/SIGNUP?promotionalCode=3W2ZC', codigo:'3W2ZC'},
+  {nombre:'Indexa Capital', logo:'logos/indexa.png', cat:'Inversión', ini:'IC', color:'#1F4E8C', porque:'Los dos somos clientes desde hace más de 3 años: fondos indexados, comisiones bajas y cero tiempo de gestión.', ventaja:'[Importe gestionado sin comisiones y plazo, p. ej. 15.000 € durante X meses]', url:'', codigo:'', pendiente:true},
+  {nombre:'Plan de pensiones de Indexa', logo:'logos/indexa.png', cat:'Inversión', ini:'IP', color:'#2F6FB0', porque:'Para la jubilación, con la misma filosofía indexada y de bajo coste.', ventaja:'[Lo que gana quien se apunta]', url:'', codigo:'', pendiente:true},
+  {nombre:'Crescenta', logo:'logos/crescenta.png', cat:'Private equity', ini:'C', color:'#2F6B57', porque:'Donde invertimos en private equity.', ventaja:'', caduca:'', url:'https://login.crescenta.com/createAccount?hs=b2179fb3-17b6-48b6-aae9-e1e68079e1a0', codigo:''},
+  {nombre:'Revolut', logo:'logos/revolut.svg', cat:'Banco', ini:'R', color:'#5E8C78', porque:'Para comprar acciones, ETF y bitcoin desde el móvil.', ventaja:'', caduca:'', url:'https://revolut.com/referral/?referral-code=jess94v!NOV1-26-AR-CRY-CH1H2&geo-redirect', codigo:''},
+  {nombre:'Octopus Energy', logo:'logos/octopus.svg', cat:'Energía', ini:'OE', color:'#9C8A66', porque:'Nuestra compañía de luz.', ventaja:'', caduca:'', url:'https://share.octopusenergy.es/cream-safari-177', codigo:''},
 ];
 
 /* Herramientas, además de las calculadoras de vivienda (que van fijas en la página). */
@@ -293,45 +572,55 @@ const HERRAMIENTAS_EXTRA = [
 /* Redes y canales. */
 const REDES = [
   {nombre:'X / Twitter', sub:'@BuscandolaLF', url:'https://x.com/BuscandolaLF', ini:'𝕏', color:'#10261E'},
-  {nombre:'Newsletter', sub:'Cada viernes en Substack', url:'https://finanzasenaccion.substack.com', ini:'N', color:'#E0A030', pendiente:true},
-  {nombre:'El Club de la Hipoteca', sub:'Comunidad en X · +2.000', url:'', ini:'⌂', color:'#1F6E54', pendiente:true},
-  {nombre:'GitHub', sub:'Código abierto', url:'https://github.com/FinanzasEnAccion', ini:'GH', color:'#5B6E66'},
+  {nombre:'Newsletter', sub:'Cada viernes en Substack', url:'https://substack.com/@finanzasenaccion', ini:'N', color:'#E0A030'},
+  {nombre:'El Club de la Hipoteca', sub:'Comunidad en X · +2.000 miembros', url:'https://x.com/i/communities/1884593569224171756', ini:'⌂', color:'#1F6E54'},
 ];
 
 const JOSE = {url:'https://cal.com/jose-perales-asesor/9zfdea'};
+
+/* Analítica sin cookies (GoatCounter). Solo cuenta visitas y clics: qué promoción se abre o qué código se copia,
+   los botones a las calculadoras y a José, y los canales. Nunca datos personales ni importes.
+   PARA ACTIVARLA: pon en GC_CODE el código del sitio de GoatCounter (lo que va delante de «.goatcounter.com»).
+   Con GC_CODE vacío no se carga nada de terceros. */
+const GC_CODE='';
 </script>
 
+<div class="prog" aria-hidden="true"><i id="prog"></i></div>
 <nav class="nav" aria-label="Secciones">
-  <a class="mk" href="#top"><img src="logo.png" alt="" width="30" height="30">Finanzas en Acción</a>
+  <a class="mk" href="#top"><img src="logo.png" alt="" width="30" height="30"><span class="mkt"><span class="brand">Finanzas en Acción</span><span class="where" id="where" aria-live="polite"></span></span></a>
   <a class="i" href="#herramientas">Herramientas</a>
+  <a class="i" href="#invertimos">Invertimos</a>
   <a class="i" href="#nosotros">Quiénes somos</a>
   <a class="i" href="#historia">Historia</a>
-  <a class="i" href="#uso" data-nav="uso">Lo que usamos</a>
+  <a class="i" href="#uso" data-nav="uso">Promociones</a>
   <a class="x" href="https://x.com/BuscandolaLF" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M18.2 2.3h3.4l-7.4 8.4 8.7 11.5h-6.8l-5.3-7-6.1 7H1.3l7.9-9L.8 2.3h7l4.8 6.4 5.6-6.4Zm-1.2 17.9h1.9L7.1 4.2H5.1l11.9 16Z"/></svg>Seguir</a>
 </nav>
 
 <main id="top">
 <!-- PORTADA -->
-<header class="hero" id="hero">
+<header class="hero h2" id="hero">
   <div class="grid" aria-hidden="true"></div>
-  <div class="chips" id="chips" aria-hidden="true">
-    <div class="chip k" style="left:6%;top:22%;--dl:.5s" data-p="-0.35"><b id="ceur">3,247 %</b><span>Euríbor hoy</span></div>
-    <div class="chip solid" style="right:7%;top:20%;--dl:.7s" data-p="-0.55"><b>2,30 %</b><span>Nuestra fija</span></div>
-    <div class="chip" style="left:9%;bottom:18%;--dl:.9s" data-p="-0.25"><b>128.000 €</b><span>Primer piso</span></div>
-    <div class="chip k" style="right:9%;bottom:20%;--dl:1.1s" data-p="-0.45"><b>710.000</b><span>Vistas del hilo</span></div>
-    <div class="chip" style="left:44%;top:12%;--dl:1.3s" data-p="-0.7"><b>0 cookies</b><span>Tus datos, tuyos</span></div>
-  </div>
-  <div class="c">
-    <div class="lab fx z on" style="--dl:.1s">Dos hermanos · Dos controllers</div>
-    <h1 style="margin-top:22px">
-      <span class="ln"><span class="fx l" style="--dl:.15s">Tus números,</span></span>
-      <span class="ln"><span class="fx r m" style="--dl:.3s">tu decisión.</span></span>
-    </h1>
-    <p class="fx u" style="--dl:.55s">Somos dos hermanos y los dos trabajamos como controllers financieros. Contamos con números reales cómo compramos vivienda e invertimos, y hacemos herramientas gratis para que decidas con los tuyos.</p>
-    <div class="btns fx u" style="--dl:.7s">
-      <a class="btn p" href="/vivienda/">Abrir las calculadoras <span aria-hidden="true">→</span></a>
-      <a class="btn g" href="#historia">Nuestra historia</a>
+  <div class="wrap hgrid">
+    <div class="htext">
+      <div class="lab fx z" style="--dl:.05s">Dos hermanos · Dos controllers</div>
+      <h1>
+        <span class="ln"><span class="fx l" style="--dl:.12s">Invertimos en</span></span>
+        <span class="ln rot fx l" style="--dl:.24s" aria-live="polite"><span class="w" id="word">inmobiliario</span></span>
+        <span class="ln"><span class="fx l dim" style="--dl:.36s">con mente de controller.</span></span>
+      </h1>
+      <p class="fx u" style="--dl:.5s">Somos dos hermanos y los dos trabajamos como controllers financieros. Contamos con números reales lo que hacemos con nuestro dinero y creamos herramientas gratis para que decidas con los tuyos.</p>
+      <div class="btns fx u" style="--dl:.62s">
+        <a class="btn p" href="/vivienda/">Abrir las calculadoras <span aria-hidden="true">→</span></a>
+        <a class="btn g" href="#invertimos">En qué invertimos</a>
+      </div>
+      <form class="mini-calc fx u" style="--dl:.75s" id="mc" autocomplete="off" onsubmit="return false">
+        <label for="mcIng">¿Cuánto ganáis al mes, netos y entre todos?</label>
+        <div class="mc-in"><input id="mcIng" inputmode="numeric" placeholder="2.500" aria-describedby="mcRes"><span>€/mes</span></div>
+        <div class="mc-res" id="mcRes" aria-live="polite"><span class="mc-k">Escribe tus ingresos y te digo cuánto podrías comprar</span></div>
+        <a class="mc-go" id="mcGo" href="/vivienda/">Afinar con las calculadoras →</a>
+      </form>
     </div>
+    <div class="deck fx z" style="--dl:.3s" id="deck" aria-hidden="true"></div>
   </div>
 </header>
 
@@ -350,7 +639,7 @@ const JOSE = {url:'https://cal.com/jose-perales-asesor/9zfdea'};
         <p>Cuánto puedes comprar, qué te cobra hoy cada banco, si te compensa alquilar, cuánto rinde un piso y cuánto cambiará tu cuota.</p>
         <div class="pills"><span>Mi presupuesto</span><span>Comprar o alquilar</span><span>Bancos hoy</span><span>Comparar ofertas</span><span>Invertir en un piso</span><span>Mi hipoteca</span></div>
         <span class="go">Abrir las calculadoras →</span>
-        <svg class="ill" viewBox="0 0 200 200" aria-hidden="true"><rect x="40" y="70" width="120" height="110" rx="10" fill="#11503D"/><path d="M20 84 100 22l80 62" fill="none" stroke="#7DD3A8" stroke-width="16" stroke-linecap="round" stroke-linejoin="round"/><rect x="62" y="98" width="30" height="30" rx="5" fill="#7DD3A8" opacity=".5"/><rect x="108" y="98" width="30" height="30" rx="5" fill="#E5B04A" opacity=".7"/><rect x="85" y="140" width="30" height="40" rx="5" fill="#F2EEE3" opacity=".25"/></svg>
+        <svg class="ill" viewBox="0 0 200 200" aria-hidden="true"><rect x="40" y="70" width="120" height="110" rx="10" fill="#285C4B"/><path d="M20 84 100 22l80 62" fill="none" stroke="#CFE3D8" stroke-width="16" stroke-linecap="round" stroke-linejoin="round"/><rect x="62" y="98" width="30" height="30" rx="5" fill="#CFE3D8" opacity=".5"/><rect x="108" y="98" width="30" height="30" rx="5" fill="#9C8A66" opacity=".7"/><rect x="85" y="140" width="30" height="40" rx="5" fill="#F4F1EA" opacity=".25"/></svg>
       </a>
     </div>
   </div>
@@ -360,10 +649,48 @@ const JOSE = {url:'https://cal.com/jose-perales-asesor/9zfdea'};
 <section class="light" style="padding-top:0">
   <div class="wrap">
     <div class="nums">
-      <div class="num fx l"><b data-n="710000">0</b><span>visualizaciones del hilo de nuestra hipoteca</span></div>
-      <div class="num fx z" style="--dl:.1s"><b data-n="2000" data-pre="+">0</b><span>miembros en El Club de la Hipoteca</span></div>
+      <a class="num fx l" style="text-decoration:none" href="https://x.com/i/communities/1884593569224171756" target="_blank" rel="noopener"><b data-n="2000" data-pre="+">0</b><span>miembros en El Club de la Hipoteca ↗</span></a>
       <div class="num fx z" style="--dl:.2s"><b data-n="6">0</b><span>calculadoras gratis</span></div>
       <div class="num fx r" style="--dl:.3s"><b data-n="0" data-suf=" €">0</b><span>lo que te cuesta usarlas</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- MEJORES HIPOTECAS -->
+<section class="light" id="mejores" style="padding-top:20px">
+  <div class="wrap">
+    <div class="sh"><div><div class="lab fx l">Mejores hipotecas del mes</div><h2 class="fx l" style="--dl:.08s" id="mhT">Las mejores hipotecas del mes</h2></div>
+      <p class="fx r" id="mhP">La oferta con la TAE más baja de cada tipo entre las que publican los bancos, con sus condiciones. Los mismos datos que usan las calculadoras.</p></div>
+    <div class="mh-aviso fx u"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M12 16v-4M12 8h.01"/></svg>
+      <span><b>Ofertas públicas y genéricas.</b> Son las condiciones que publica cada banco para un perfil estándar, no una oferta para ti. Con tus ingresos, tus ahorros y lo que contrates pueden salir mejores o peores. <a href="#hipoteca">Que te mejoren la tuya →</a></span></div>
+    <div class="mh" id="mh"></div>
+    <div class="mh-foot fx u"><span id="mhF"></span><a class="btn d" href="/vivienda/#bancos">Ver todas las ofertas en las calculadoras →</a></div>
+  </div>
+</section>
+
+<!-- HIPOTECA -->
+<section class="light open" id="hipoteca" style="padding-top:0">
+  <div class="wrap">
+    <div class="jose" id="jose">
+      <svg class="house" viewBox="0 0 100 100" aria-hidden="true"><path d="M8 46 50 12l42 34" fill="none" stroke="#08251C" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      <div class="lab" style="color:var(--deep)">¿Vas a pedir hipoteca?</div>
+      <h2 style="margin-top:14px">Antes de firmar, que te mejoren la oferta.</h2>
+      <p>José es el bróker que nos salvó la hipoteca el día antes de firmar. Revisa tu caso, negocia con los bancos y te revisa la FEIN antes de ir a notaría. Llévale el informe en PDF de las calculadoras.</p>
+      <a class="btn d" id="joseurl" href="#" target="_blank" rel="noopener">Primer contacto gratis con José →</a>
+    </div>
+  </div>
+</section>
+
+<!-- EN QUÉ INVERTIMOS -->
+<section id="invertimos" style="padding-top:110px">
+  <div class="wrap">
+    <div class="sh"><div><div class="lab fx l">En qué invertimos</div><h2 class="fx l" style="--dl:.08s">Cuatro patas, un mismo método.</h2></div>
+      <p class="fx r">Lo contamos con nuestros propios números. No son recomendaciones: es lo que hacemos nosotros y por qué.</p></div>
+    <div class="inv">
+      <article class="iv fx l"><span class="no">01</span><svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 22 24 8l18 14"/><path d="M11 19v21h26V19"/><path d="M20 40V29h8v11"/></svg><h3>Inmobiliario</h3><p>Comprar para alquilar: nuestro primer piso está alquilado por habitaciones desde 2025.</p></article>
+      <article class="iv fx z" style="--dl:.1s"><span class="no">02</span><svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 38 18 24l8 8 16-18"/><path d="M32 14h10v10"/></svg><h3>ETF</h3><p>Indexados y de bajo coste, para el largo plazo y sin tener que estar encima.</p></article>
+      <article class="iv fx z" style="--dl:.2s"><span class="no">03</span><svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="8" y="22" width="7" height="18" rx="1.5"/><rect x="20.5" y="12" width="7" height="28" rx="1.5"/><rect x="33" y="17" width="7" height="23" rx="1.5"/></svg><h3>Acciones</h3><p>Empresas concretas, elegidas mirando sus números como miramos los de cualquier empresa.</p></article>
+      <article class="iv fx r" style="--dl:.3s"><span class="no">04</span><svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="7" y="16" width="34" height="24" rx="3"/><path d="M17 16v-5h14v5M7 26h34"/></svg><h3>Private equity</h3><p>Lo vemos cada día desde dentro: uno de nosotros hace el reporting de fondos de capital riesgo. Invertimos a través de Crescenta.</p></article>
     </div>
   </div>
 </section>
@@ -390,29 +717,15 @@ const JOSE = {url:'https://cal.com/jose-perales-asesor/9zfdea'};
 <!-- LO QUE USAMOS -->
 <section class="light" id="uso">
   <div class="wrap">
-    <div class="sh"><div><div class="lab fx l">Lo que usamos</div><h2 class="fx l" style="--dl:.08s">Lo que usamos de verdad. Con ventaja si entras por nuestro enlace.</h2></div>
+    <div class="sh"><div><div class="lab fx l">Promociones · Lo que usamos</div><h2 class="fx l" style="--dl:.08s">Lo que usamos de verdad. Con regalo si entras por nuestro enlace.</h2></div>
       <p class="fx r">Solo ponemos lo que usamos nosotros. Si te apuntas con nuestro enlace, normalmente ganamos los dos.</p></div>
     <div class="refs" id="refs"></div>
-    <div class="note fx u"><b>Transparencia.</b> Son enlaces de referido: si te das de alta con ellos, podemos recibir una recompensa. No condiciona lo que recomendamos. Nada de esto es asesoramiento financiero ni una recomendación personalizada.</div>
-  </div>
-</section>
-
-<!-- HIPOTECA -->
-<section class="light open" id="hipoteca">
-  <div class="wrap">
-    <div class="jose" id="jose">
-      <svg class="house" viewBox="0 0 100 100" aria-hidden="true"><path d="M8 46 50 12l42 34" fill="none" stroke="#08251C" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/></svg>
-      <div class="lab" style="color:var(--deep)">¿Vas a pedir hipoteca?</div>
-      <h2 style="margin-top:14px">Antes de firmar, que te mejoren la oferta.</h2>
-      <p>José es el bróker que nos salvó la hipoteca el día antes de firmar. Revisa tu caso, negocia con los bancos y te revisa la FEIN antes de ir a notaría. Llévale el informe en PDF de las calculadoras.</p>
-      <a class="btn d" id="joseurl" href="#" target="_blank" rel="noopener">Primer contacto gratis con José →</a>
-      <p class="fine">Transparencia: si firmas tu hipoteca con José, él nos paga una parte de sus honorarios.</p>
-    </div>
+    <div class="note fx u"><b>Transparencia.</b> Son enlaces y códigos de referido: si te das de alta con ellos, podemos recibir una recompensa. Las condiciones de cada promoción las pone cada empresa y pueden cambiar: revísalas antes de darte de alta. No condiciona lo que recomendamos. Nada de esto es asesoramiento financiero ni una recomendación personalizada.</div>
   </div>
 </section>
 
 <!-- CANALES -->
-<section style="padding-top:100px">
+<section id="canales" style="padding-top:100px">
   <div class="wrap">
     <div class="sh"><div><div class="lab fx l">Síguenos</div><h2 class="fx l" style="--dl:.08s">Lo contamos cada semana.</h2></div></div>
     <div class="chan" id="chan"></div>
@@ -438,11 +751,108 @@ $('joseurl').href=JOSE.url;
 
 /* Euríbor del día en la portada (lo lee de las calculadoras; si no puede, se queda el de la copia). */
 fetch('/vivienda/data.json',{cache:'no-cache'}).then(r=>r.ok?r.json():null)
-  .then(j=>{const e=j&&j.mercado&&j.mercado.eur;if(typeof e==='number')$('ceur').textContent=e.toLocaleString('es-ES',{minimumFractionDigits:3})+' %'}).catch(()=>{});
+  .then(j=>{const e=j&&j.mercado&&j.mercado.eur;if(typeof e==='number'&&$('ceur'))$('ceur').textContent=e.toLocaleString('es-ES',{minimumFractionDigits:3})+' %'}).catch(()=>{});
+
+
+/* Portada: baraja de tarjetas y palabra que rota a la vez */
+const DECK=[
+  {w:'inmobiliario',cat:'Inmobiliario',big:'128.000 €',sub:'Primer piso, alquilado por habitaciones',ic:'<path d="M6 22 24 8l18 14"/><path d="M11 19v21h26V19"/><path d="M20 40V29h8v11"/>',bars:[30,45,40,60,70,85]},
+  {w:'ETF',cat:'ETF',big:'Indexados',sub:'Bajo coste y a largo plazo',ic:'<path d="M6 38 18 24l8 8 16-18"/><path d="M32 14h10v10"/>',bars:[20,35,30,50,62,80]},
+  {w:'acciones',cat:'Acciones',big:'Empresas',sub:'Elegidas mirando sus números',ic:'<rect x="8" y="22" width="7" height="18" rx="1.5"/><rect x="20.5" y="12" width="7" height="28" rx="1.5"/><rect x="33" y="17" width="7" height="23" rx="1.5"/>',bars:[55,40,65,50,75,70]},
+  {w:'private equity',cat:'Private equity',big:'Desde dentro',sub:'Hacemos reporting de fondos de capital riesgo',ic:'<rect x="7" y="16" width="34" height="24" rx="3"/><path d="M17 16v-5h14v5M7 26h34"/>',bars:[25,30,45,55,70,90]},
+];
+(()=>{
+  const deck=$('deck'),word=$('word');if(!deck)return;
+  deck.innerHTML=DECK.map((d,i)=>`<article class="dk c${i}"><div class="top"><span>Cartera · Finanzas en Acción</span><span>0${i+1}/0${DECK.length}</span></div>
+    <svg class="ic" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round">${d.ic}</svg>
+    <div class="cat">${d.cat}</div><div class="big">${d.big}</div><div class="sub">${d.sub}</div>
+    <div class="bars">${d.bars.map(h=>`<i style="height:${h}%"></i>`).join('')}</div></article>`).join('');
+  const cards=[...deck.children];let order=cards.map((_,i)=>i),tx=0,ty=0;
+  const place=()=>order.forEach((ci,pos)=>{const c=cards[ci];if(c.classList.contains('gone'))return;
+    c.style.zIndex=10-pos;c.style.opacity=pos>2?0:1-pos*.12;c.style.filter=pos?`brightness(${1-pos*.12})`:'none';
+    c.style.transform=`translate3d(${pos*26}px,${-pos*22}px,${-pos*110}px) rotateY(${tx-6}deg) rotateX(${ty+4}deg) rotate(${pos*3}deg)`});
+  place();
+  addEventListener('pointermove',e=>{if(RM||MOV)return;tx=(e.clientX/innerWidth-.5)*14;ty=-(e.clientY/innerHeight-.5)*10;place()},{passive:true});
+  if(RM)return;
+  let k=0;
+  const pos=(c,i)=>{c.style.zIndex=10-i;c.style.opacity=i>2?0:1-i*.12;c.style.filter=i?`brightness(${1-i*.12})`:'none';
+    c.style.transform=`translate3d(${i*26}px,${-i*22}px,${-i*110}px) rotateY(${tx-6}deg) rotateX(${ty+4}deg) rotate(${i*3}deg)`};
+  const next=()=>{if(document.hidden)return;
+    const front=cards[order[0]],rest=order.slice(1);
+    front.classList.add('gone');rest.forEach((ci,i)=>pos(cards[ci],i));
+    k=(k+1)%DECK.length;word.classList.add('out');
+    setTimeout(()=>{word.textContent=DECK[k].w;word.classList.remove('out');word.classList.add('in');void word.offsetWidth;word.classList.remove('in')},380);
+    setTimeout(()=>{order=[...rest,order[0]];front.style.transition='none';front.classList.remove('gone');pos(front,order.length-1);void front.offsetWidth;front.style.transition=''},850);
+  };
+  setInterval(next,2800);
+})();
+
+
+/* Dónde estoy */
+(()=>{
+  const SECS=[['herramientas','Herramientas'],['mejores','Mejores hipotecas'],['hipoteca','Hipoteca'],['invertimos','Invertimos'],['nosotros','Quiénes somos'],['historia','Nuestra historia'],['uso','Promociones'],['canales','Síguenos']];
+  const nav=document.querySelector('.nav'),where=$('where'),bar=$('prog');
+  const links=[...document.querySelectorAll('.nav a.i')];
+  let last='';
+  const upd=()=>{
+    const max=document.documentElement.scrollHeight-innerHeight;bar.style.transform=`scaleX(${max>0?Math.min(1,scrollY/max):0})`;
+    let cur='',name='';
+    for(const [id,n] of SECS){const el=$(id);if(!el||el.hidden)continue;if(el.getBoundingClientRect().top<=innerHeight*.35){cur=id;name=n}}
+    if(cur===last)return;last=cur;
+    links.forEach(a=>a.classList.toggle('act',a.getAttribute('href')==='#'+cur));
+    nav.classList.toggle('has-where',!!cur);
+    if(name)where.textContent=name;
+  };
+  addEventListener('scroll',upd,{passive:true});addEventListener('resize',upd);upd();
+})();
+
+
+/* Analítica: eventos con data-ev y enlaces clave */
+const GCQ=[];
+function track(name){try{if(!GC_CODE||window.claude)return;
+  const c=String(name).toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g,'').replace(/\d{4,}/g,'').replace(/[^a-z0-9\/-]+/g,'-').replace(/-+/g,'-').slice(0,80);
+  const ev={path:'evento/'+c,title:c,event:true};
+  if(window.goatcounter&&window.goatcounter.count)window.goatcounter.count(ev);else if(GCQ.length<50)GCQ.push(ev)}catch(e){}}
+if(GC_CODE&&!window.claude&&/^https?:$/.test(location.protocol)){const sc=document.createElement('script');sc.async=true;sc.src='https://gc.zgo.at/count.js';sc.dataset.goatcounter=`https://${GC_CODE}.goatcounter.com/count`;
+  sc.onload=()=>{const t=setInterval(()=>{if(window.goatcounter&&window.goatcounter.count){clearInterval(t);GCQ.splice(0).forEach(ev=>window.goatcounter.count(ev))}},300);setTimeout(()=>clearInterval(t),8000)};document.head.appendChild(sc)}
+document.addEventListener('click',e=>{
+  const t=e.target.closest('[data-ev]');if(t){track(t.dataset.ev);return}
+  const a=e.target.closest('a[href]');if(!a)return;const h=a.getAttribute('href');
+  if(/\/vivienda\/?$|finanzasenaccion\.github\.io\/vivienda/.test(h))track('calculadoras/'+(a.closest('section,header')?.id||'otro'));
+  else if(/cal\.com\/jose/.test(h))track('jose/'+(a.closest('section')?.id||'otro'));
+  else if(/x\.com\/i\/communities/.test(h))track('canal/club');
+  else if(/substack\.com/.test(h))track('canal/newsletter');
+  else if(/x\.com\/BuscandolaLF/.test(h))track('canal/x-'+(a.closest('nav')?'menu':'pie'));
+},true);
+
+
+/* Mini calculadora: cuota máx. = 35 % de los ingresos (y que queden al menos 900 €), hipoteca a 30 años al tipo fijo medio del INE, financiando el 80 %.
+   Mismos criterios que la calculadora «Mi presupuesto»; es orientativa y no mira ahorros ni impuestos de tu comunidad. */
+(()=>{
+  const inp=$('mcIng'),out=$('mcRes'),go=$('mcGo');if(!inp)return;
+  let tipo=3.03,fuente='tipo fijo medio del INE';
+  fetch('/vivienda/data.json',{cache:'no-cache'}).then(r=>r.ok?r.json():null).then(j=>{const t=j&&j.mercado&&j.mercado.ineFija;if(typeof t==='number'&&t>0&&t<15){tipo=t;calc()}}).catch(()=>{});
+  const base=go.getAttribute('href');
+  const fmt=n=>Math.round(n).toLocaleString('es-ES').replace(/\B(?=(\d{3})+(?!\d))/g,m=>m);
+  const eur=n=>String(Math.round(n)).replace(/\B(?=(\d{3})+(?!\d))/g,'.')+' €';
+  const b64u=s=>{let b='';new TextEncoder().encode(s).forEach(c=>{b+=String.fromCharCode(c)});return btoa(b).replace(/\+/g,'-').replace(/\//g,'_').replace(/=+$/,'')};
+  function calc(){
+    const ing=+String(inp.value).replace(/[^\d]/g,'');
+    if(inp.value&&String(inp.value).replace(/[^\d]/g,'')!==''){const f=String(ing).replace(/\B(?=(\d{3})+(?!\d))/g,'.');if(inp.value!==f)inp.value=f}
+    if(!ing||ing<300){out.innerHTML='<span class="mc-k">Escribe tus ingresos y te digo cuánto podrías comprar</span>';go.setAttribute('href',base);return}
+    const cuota=Math.max(0,Math.min(ing*.35,ing-900));
+    const i=tipo/100/12,n=360,prest=i>0?cuota*(1-Math.pow(1+i,-n))/i:cuota*n;
+    const precio=Math.floor(prest/0.8/1000)*1000,ahorro=Math.round(precio*0.3/1000)*1000;
+    if(precio<20000){out.innerHTML='<span class="mc-k">Con esos ingresos el banco lo tendría difícil. Prueba las calculadoras: el aval ICO o un segundo titular cambian mucho.</span>';go.setAttribute('href',base);return}
+    out.innerHTML=`<span class="big">Podrías comprar hasta <em>${eur(precio)}</em></span><span class="sm">Cuota de unos ${eur(cuota)}/mes, hipoteca a 30 años al ${String(tipo.toFixed(2)).replace('.',',')} % (${fuente}) y necesitarías unos ${eur(ahorro)} ahorrados (entrada y gastos). Es orientativo.</span>`;
+    go.setAttribute('href',base+'#c='+b64u(JSON.stringify({a:{ingresos:ing}})));
+  }
+  inp.addEventListener('input',calc);inp.addEventListener('change',()=>{if(typeof track==='function'&&inp.value)track('mini-calc/usada')});
+})();
 
 /* Bandas */
 const B1=['Comprar para alquilar','Vivir de alquiler','Números reales','Con su fuente','Sin vender humo'];
-const B2=['Calculadoras gratis','El Club de la Hipoteca','Newsletter cada viernes','Dos controllers','Finanzas en Acción'];
+const B2=['Inmobiliario','ETF','Acciones','Private equity','Newsletter cada viernes','Finanzas en Acción'];
 const band=(a)=>{const s=a.map(t=>`<span>${t}</span><i>✦</i>`).join('');return s+s+s};
 $('b1').innerHTML=band(B1);$('b2').innerHTML=band(B2);
 
@@ -479,23 +889,49 @@ $('cita').innerHTML=`${esc(c1)}${c2?`,<br><em>${esc(c2.trim())}.</em>`:''}<small
 /* Lo que usamos */
 const refs=REFERIDOS.filter(ver);
 if(!refs.length){$('uso').hidden=true;document.querySelectorAll('[data-nav="uso"]').forEach(e=>e.hidden=true)}
-$('refs').innerHTML=refs.map((r,i)=>`
-  <article class="ref fx z${r.pendiente?' pend':''}" style="--dl:${i*.12}s">
-    ${r.pendiente?'<span class="pt">Falta el enlace</span>':''}
-    <div class="top"><div class="lg" style="background:${esc(r.color||'#0B3D2E')}">${esc(r.ini||r.nombre[0])}</div><div><h3>${esc(r.nombre)}</h3><div class="cat">${esc(r.cat)}</div></div></div>
-    <p>${esc(r.porque)}</p>
-    ${r.ventaja?`<div class="gift">🎁 ${esc(r.ventaja)}</div>`:''}
-    <div class="act">${r.url?`<a class="btn d" href="${esc(r.url)}" target="_blank" rel="noopener sponsored">Abrir con nuestro enlace →</a>`:''}
-      ${r.codigo?`<button type="button" class="code" data-code="${esc(r.codigo)}">${esc(r.codigo)} ⧉</button>`:''}</div>
-  </article>`).join('');
-document.addEventListener('click',e=>{const b=e.target.closest('.code');if(!b)return;
-  navigator.clipboard?.writeText(b.dataset.code).then(()=>{const t=b.textContent;b.textContent='¡Copiado!';setTimeout(()=>b.textContent=t,1500)}).catch(()=>{})});
+const MOVIL=`<svg class="movil" viewBox="0 0 120 200" aria-hidden="true">
+  <defs><linearGradient id="mg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#5E8C78"/><stop offset="1" stop-color="#2F6B57"/></linearGradient></defs>
+  <rect x="14" y="6" width="92" height="188" rx="22" fill="#1E2B26"/>
+  <rect x="17" y="9" width="86" height="182" rx="19" fill="url(#mg)"/>
+  <rect x="24" y="16" width="50" height="50" rx="15" fill="#1E2B26" opacity=".85"/>
+  <circle cx="38" cy="30" r="9" fill="#2a3a34" stroke="#8FC2AC" stroke-width="2"/><circle cx="38" cy="30" r="4" fill="#0d1512"/>
+  <circle cx="38" cy="52" r="9" fill="#2a3a34" stroke="#8FC2AC" stroke-width="2"/><circle cx="38" cy="52" r="4" fill="#0d1512"/>
+  <circle cx="60" cy="41" r="9" fill="#2a3a34" stroke="#8FC2AC" stroke-width="2"/><circle cx="60" cy="41" r="4" fill="#0d1512"/>
+  <circle cx="64" cy="22" r="3" fill="#CFE3D8"/><circle cx="64" cy="60" r="2.4" fill="#0d1512"/>
+  <rect x="104" y="58" width="4" height="26" rx="2" fill="#1E2B26"/><rect x="12" y="50" width="4" height="16" rx="2" fill="#1E2B26"/><rect x="12" y="72" width="4" height="28" rx="2" fill="#1E2B26"/>
+  <path d="M26 150c18-10 50-10 68 0" stroke="#CFE3D8" stroke-width="2" fill="none" opacity=".35"/>
+</svg>`;
+const LOGO=(r,cls='lg')=>r.logo?`<div class="${cls} img" data-ini="${esc(r.ini||r.nombre[0])}" data-color="${esc(r.color||'#2F6B57')}"><img src="${esc(r.logo)}" alt="${esc(r.nombre)}" loading="lazy" onerror="const d=this.parentNode;d.classList.remove('img');d.style.background=d.dataset.color;d.textContent=d.dataset.ini"></div>`:`<div class="${cls}" style="background:${esc(r.color||'#2F6B57')}">${esc(r.ini||r.nombre[0])}</div>`;
+const codes=r=>(r.codigos||(r.codigo?[{etq:'Código',codigo:r.codigo}]:[])).map(c=>`<button type="button" class="code" data-code="${esc(c.codigo)}" data-ev="promo-codigo/${esc(r.nombre)}-${esc(c.etq)}" aria-label="Copiar el código ${esc(c.codigo)}"><span>${esc(c.etq)}</span> ${esc(c.codigo)} <i aria-hidden="true">⧉</i></button>`).join('');
+const cta=r=>r.url?`<a class="btn d" href="${esc(r.url)}" target="_blank" rel="noopener sponsored" data-ev="promo-abrir/${esc(r.nombre)}">${esc(r.boton||'Abrir con nuestro enlace')} →</a>`:(r.codigo&&r.boton?`<button type="button" class="btn d cp" data-code="${esc(r.codigo)}" data-ev="promo-codigo/${esc(r.nombre)}">${esc(r.boton)}</button>`:'');
+const conRegalo=refs.filter(r=>r.ventaja&&!r.pendiente), sinRegalo=refs.filter(r=>!(r.ventaja&&!r.pendiente));
+$('refs').innerHTML=
+ `<div class="tickets">${conRegalo.map((r,i)=>`
+  <article class="tk fx ${i%2?'r':'l'} t${i%3}" style="--dl:${i*.1}s">
+    <div class="stub"><span class="gl">Tu regalo</span><b>${esc(r.cifra||'🎁')}</b>${r.caduca?`<span class="cad">Hasta el ${esc(r.caduca)}</span>`:''}</div>
+    <div class="tb"><div class="tn">${LOGO(r,'tl')}<h3>${esc(r.nombre)}</h3><span class="cat">${esc(r.cat)}</span></div>
+      <p class="cond">${esc(r.ventaja)}</p><p class="why">${esc(r.porque)}</p></div>
+    <div class="ta">${cta(r)}${codes(r)}</div>
+  </article>`).join('')}</div>`+
+ (sinRegalo.length?`<div class="also"><div class="alsoh">También usamos</div><div class="rows">${sinRegalo.map((r,i)=>`
+  <article class="row fx z${r.pendiente?' pend':''}${(r.codigos||r.codigo)?' hascode':''}${r.img?' wide':''}" style="--dl:${i*.06}s">
+    ${LOGO(r)}
+    <div class="rb"><h3>${esc(r.nombre)} <span class="cat">${esc(r.cat)}</span></h3><p>${esc(r.porque)}</p></div>
+    <div class="ra">${r.url?`<a class="mini" href="${esc(r.url)}" target="_blank" rel="noopener sponsored" data-ev="promo-abrir/${esc(r.nombre)}">Abrir →</a>`:''}${codes(r)}</div>
+    ${r.img==='movil'?MOVIL:''}
+  </article>`).join('')}</div></div>`:'');
+document.addEventListener('click',e=>{const b=e.target.closest('.code,.cp');if(!b)return;
+  const done=()=>{const t=b.innerHTML;b.innerHTML=b.classList.contains('cp')?'Código copiado ✓ · ábrelo en la app de BBVA':'¡Copiado! ✓';b.classList.add('ok');setTimeout(()=>{b.innerHTML=t;b.classList.remove('ok')},2200)};
+  try{navigator.clipboard.writeText(b.dataset.code).then(done,()=>done())}catch(_){done()}});
 
 /* Canales */
-$('chan').innerHTML=REDES.filter(ver).map((s,i)=>{
-  const ok=s.url&&!s.pendiente, side=['l','z','z','r'][i%4];
+const redes=REDES.filter(ver);
+if(redes.length===1&&redes[0].url){const r0=redes[0];$('chan').classList.add('solo');
+  $('chan').innerHTML=`<a class="ch fx z" href="${esc(r0.url)}" target="_blank" rel="noopener"><div><div class="k">Síguenos en ${esc(r0.nombre.split(' ')[0])}</div><b>${esc(r0.sub)}</b><span>Lo que hacemos con nuestro dinero, con números reales.</span></div><span class="arr">↗</span></a>`}
+else{if(redes.length<=3){$('chan').classList.add('duo2');$('chan').style.setProperty('--n',redes.length)}$('chan').innerHTML=redes.map((s,i)=>{
+  const ok=s.url&&!s.pendiente, side=redes.length<=3?(['l','z','r'][i]):['l','z','z','r'][i%4];
   return `<${ok?'a':'div'} class="ch fx ${side}${ok?'':' pend'}" style="--dl:${i*.08}s" ${ok?`href="${esc(s.url)}" target="_blank" rel="noopener"`:''}>
-    <div class="k">${ok?'Abrir ↗':'Falta el enlace'}</div><b>${esc(s.nombre)}</b><span>${esc(s.sub)}</span></${ok?'a':'div'}>`}).join('');
+    <div class="k">${ok?'Abrir ↗':'Falta el enlace'}</div><b>${esc(s.nombre)}</b><span>${esc(s.sub)}</span></${ok?'a':'div'}>`}).join('');}
 
 /* Entradas: cada bloque entra cuando aparece en pantalla */
 /* Se mide la posición sin el desplazamiento de la animación (offsetTop), para que lo que entra por los lados también se active. */
@@ -504,6 +940,45 @@ const absTop=el=>{let t=0;for(let e=el;e;e=e.offsetParent)t+=e.offsetTop;return 
 const revela=()=>{const lim=scrollY+innerHeight*.9;fxs=fxs.filter(el=>{if(RM||absTop(el)<lim){el.classList.add('on');return false}return true})};
 revela();addEventListener('scroll',revela,{passive:true});addEventListener('resize',revela);
 requestAnimationFrame(()=>document.querySelectorAll('.hero .fx').forEach(el=>el.classList.add('on')));
+
+
+/* Mejores hipotecas del mes: la TAE más baja de cada tipo, de data.json (el mismo de las calculadoras) */
+const MH0={"actualizado": "2026-10-15", "fecha": "15 de octubre de 2026", "ofertas": [{"b": "Ibercaja", "p": "Hipoteca Vamos Fija", "t": "fija", "tin": 2.55, "tinS": 3.55, "tae": "3,49 %", "taeS": "3,80 %", "v": "Nómina ≥ 2.500 €/mes, tarjeta de crédito (12 usos al semestre), 3 recibos, seguro de hogar, seguro de vida, plan de inversión en fondos ≥ 75 €/mes", "n": "Préstamo desde 100.000 €. Sin bonificar, el primer año también va al 2,55 %. Oferta para solicitudes hasta el 31/10/2026", "f": "https://www.ibercaja.es/particulares/hipotecas-prestamos/hipotecas/hipoteca-vamos-fija/", "d": "15/10/2026", "ingMin": 2500, "ingReq": "bonif", "minImp": 100000, "pz": 25}, {"b": "Banco Sabadell", "p": "Hipoteca Fija Bonificada", "t": "fija", "tin": 2.75, "tinS": 3.75, "tae": "3,67 %", "taeS": "4,23 %", "v": "Nómina o pensión, seguro de vida, seguro de hogar, seguro de protección de pagos", "n": "Condiciones publicadas por el banco, vigentes hasta el 03/11/2026", "f": "https://www.bancsabadell.com/bsnacional/es/particulares/hipotecas/hipoteca-fija/", "d": "15/10/2026", "pz": 30}, {"b": "Openbank", "p": "Hipoteca Open Fija", "t": "fija", "tin": 2.9, "tinS": 3.4, "tae": "3,44 %", "taeS": "3,67 %", "v": "Ingresos domiciliados ≥ 900 €/mes (1.800 € con dos titulares), seguro de hogar, seguro de vida", "n": "Banco online. El tipo depende del plazo: 2,80 % hasta 15 años, 2,83 % a 20, 2,86 % a 25 y 2,90 % a 30 (TAE 3,41 % a 3,44 %). Baja 0,10 puntos si financias más de 150.000 €", "f": "https://www.openbank.es/hipoteca-fija", "d": "15/10/2026", "ingMin": 900, "ingMin2": 1800, "ingReq": "bonif", "minImp": 30000, "pz": 30}, {"b": "CaixaBank", "p": "CasaFácil Fijo", "t": "fija", "tin": 2.85, "tinS": 3.85, "tae": "4,26 %", "taeS": "4,32 %", "v": "Nómina > 600 €/mes, 3 recibos, 3 compras con tarjeta al trimestre, seguro de hogar, seguro de vida, alarma", "n": "Plazos de 15, 20 o 30 años: 2,80 % a 15 y 20 años, 2,85 % a 30. La TAE incluye la alarma (unos 52 €/mes)", "f": "https://www.caixabank.es/particular/hipotecas/casafacil.html", "d": "15/10/2026", "ingMin": 600, "ingReq": "bonif", "pz": 30}, {"b": "BBVA", "p": "Hipoteca Fija", "t": "fija", "tin": 2.95, "tinS": 3.95, "tae": "3,78 %", "taeS": "4,63 %", "v": "Nómina ≥ 600 €/mes, seguro de hogar, seguro de amortización del préstamo (vida)", "n": "La TAE con bonificaciones es la que recoge HelpMyCash a 01/10/2026: la web de BBVA no la deja leer. Su ficha FIPRE de 02/10/2026 confirma el 2,95 % (3,95 % sin bonificar) y la TAE sin bonificar, 4,63 % a 25 años. 2,85 % a 15 años. Condiciones válidas hasta el 31/10/2026", "f": "https://www.bbva.es/personas/productos/hipotecas/hipoteca-fija.html", "d": "15/10/2026", "ingMin": 600, "ingReq": "bonif", "taeF": "HelpMyCash, 01/10/2026", "pz": 30}, {"b": "MyInvestor", "p": "Hipoteca Fija", "t": "fija", "tin": 3.4, "tinS": 3.4, "tae": "3,61 %", "v": "Ninguna", "n": "Ingresos ≥ 4.000 €/mes netos, solo o entre los titulares (3.000 € si eres funcionario); préstamo desde 100.000 €. El seguro de hogar es obligatorio, pero con la aseguradora que quieras", "f": "https://myinvestor.es/hipotecas/hipoteca-fija/", "d": "15/10/2026", "ingMin": 4000, "ingMin2": 4000, "ingReq": "acceso", "minImp": 100000, "pz": 30}, {"b": "Banca March", "p": "Hipoteca Fija Avantio", "t": "fija", "tin": 2.65, "tinS": 3.35, "tae": "3,01 %", "taeS": "3,48 %", "v": "Ingresos domiciliados ≥ 2.000 €/mes, seguro de vida, seguro de hogar", "n": "Solo online (Avantio). Pide ingresos de 4.000 €/mes netos en la unidad familiar y préstamo desde 200.000 €. Sin bonificar, el primer año también va al 2,65 %. La TAE es la de su ejemplo: 300.000 € a 30 años", "f": "https://avantio.bancamarch.es/es/financiacion/hipoteca-fija/", "d": "15/10/2026", "ingMin": 4000, "ingMin2": 4000, "ingReq": "acceso", "minImp": 200000, "pz": 30}, {"b": "Banco Santander", "p": "Hipoteca Fija Bonificada", "t": "fija", "tin": 2.96, "tinS": 3.96, "tae": "3,65 %", "taeS": "4,16 %", "v": "Nómina ≥ 1.000 €/mes, Bizum o tarjeta de crédito, seguro de hogar y seguro de protección de préstamos (primas > 300 €/año)", "n": "Sin bonificar, los 6 primeros meses también van al 2,96 %. El banco paga los gastos de la hipoteca salvo la tasación. Oferta hasta el 15/11/2026", "f": "https://www.bancosantander.es/particulares/hipotecas/hipoteca-fija", "d": "15/10/2026", "ingMin": 1000, "ingReq": "bonif", "minImp": 20000, "pz": 30}, {"b": "Banco Sabadell", "p": "Hipoteca Mixta", "t": "mixta", "tin": 1.8, "tinS": 2.7, "anos": 3, "dif": 0.7, "difS": 1.6, "tae": "4,03 %", "taeS": "4,83 %", "v": "Nómina o pensión, seguro de vida, seguro de hogar", "n": "También con 5 años fijos (2,10 %, después Euríbor + 1,00 %; TAE 4,05 %) o con 7 (2,45 %, después Euríbor + 1,30 %; TAE 4,12 %). Condiciones vigentes hasta el 03/11/2026", "f": "https://www.bancsabadell.com/bsnacional/es/particulares/hipotecas/hipoteca-mixta/", "d": "15/10/2026", "pz": 30}, {"b": "Pibank", "p": "Hipoteca Pibank Mixta", "t": "mixta", "tin": 2.7, "tinS": 2.7, "anos": 4, "dif": 0.65, "difS": 0.65, "tae": "3,81 %", "v": "Ninguna", "n": "Préstamo desde 80.000 € y vivienda de más de 100.000 €. Pide un titular con contrato indefinido o funcionario. Llega al 90 % del precio si no pasa del 80 % de la tasación. Plazo de 15 a 35 años", "f": "https://www.pibank.es/hipotecas/", "d": "15/10/2026", "minImp": 80000, "pz": 35}, {"b": "Ibercaja", "p": "Hipoteca Vamos Mixta 5", "t": "mixta", "tin": 2, "tinS": 3, "anos": 5, "dif": 0.6, "difS": 1.6, "tae": "4,02 %", "taeS": "4,35 %", "v": "Nómina ≥ 2.500 €/mes, tarjeta de crédito (12 usos al semestre), 3 recibos, seguro de hogar, seguro de vida, plan de inversión en fondos ≥ 75 €/mes", "n": "Préstamo desde 100.000 €. Sin bonificar, el primer año también va al 2,00 %. Oferta para solicitudes hasta el 31/10/2026", "f": "https://www.ibercaja.es/particulares/hipotecas-prestamos/hipotecas/hipoteca-vamos-mixta-5/", "d": "15/10/2026", "ingMin": 2500, "ingReq": "bonif", "minImp": 100000, "pz": 25}, {"b": "Banco Santander", "p": "Hipoteca Mixta", "t": "mixta", "tin": 2.34, "tinS": 3.34, "anos": 5.5, "dif": 0.74, "difS": 1.74, "tae": "3,98 %", "taeS": "4,46 %", "v": "Nómina ≥ 1.000 €/mes, Bizum o tarjeta de crédito, seguro de hogar y seguro de protección de préstamos (primas > 300 €/año)", "n": "Tramo fijo de 66 meses. Sin bonificar, los 6 primeros también van al 2,34 %. El banco paga los gastos de la hipoteca salvo la tasación. Oferta hasta el 15/11/2026", "f": "https://www.bancosantander.es/particulares/hipotecas/hipoteca-mixta", "d": "15/10/2026", "ingMin": 1000, "ingReq": "bonif", "minImp": 20000, "pz": 30}, {"b": "ING", "p": "Naranja Mixta", "t": "mixta", "tin": 3.85, "tinS": 4.35, "anos": 5, "dif": 1.04, "difS": 1.54, "tae": "4,83 %", "taeS": "4,73 %", "v": "Cuenta con nómina (o ingresos de 600 €/mes o saldo de 2.000 €), seguro de hogar, seguro de vida", "n": "ING da precio personalizado: estas son las cifras del ejemplo que publica (150.000 € a 25 años), con la TAE calculada con el Euríbor de septiembre (3,247 %, BOE de octubre). Solo con el seguro de hogar: 4,25 % y Euríbor + 1,44 % (TAE 4,90 %). También con 10, 15 o 20 años fijos. Préstamo desde 50.000 €", "f": "https://www.ing.es/hipotecas/hipoteca-mixta", "d": "15/10/2026", "minImp": 50000, "pz": 40}, {"b": "Ibercaja", "p": "Hipoteca Vamos Mixta 10", "t": "mixta", "tin": 2.1, "tinS": 3.1, "anos": 10, "dif": 0.6, "difS": 1.6, "tae": "3,59 %", "taeS": "3,89 %", "v": "Nómina ≥ 2.500 €/mes, tarjeta de crédito (12 usos al semestre), 3 recibos, seguro de hogar, seguro de vida, plan de inversión en fondos ≥ 75 €/mes", "n": "Préstamo desde 100.000 €. Sin bonificar, el primer año también va al 2,10 %. Oferta para solicitudes hasta el 31/10/2026", "f": "https://www.ibercaja.es/particulares/hipotecas-prestamos/hipotecas/hipoteca-vamos-mixta-10/", "d": "15/10/2026", "ingMin": 2500, "ingReq": "bonif", "minImp": 100000, "pz": 25}, {"b": "Banco Sabadell", "p": "Hipoteca Variable", "t": "variable", "tin": 1.5, "anos": 1, "dif": 0.5, "difS": 1.5, "tae": "4,46 %", "taeS": "5,05 %", "v": "Nómina o pensión, seguro de vida, seguro de hogar, seguro de protección de pagos", "n": "1,50 % el primer año (2,50 % sin bonificar). Condiciones vigentes hasta el 03/11/2026", "f": "https://www.bancsabadell.com/bsnacional/es/particulares/hipotecas/hipoteca-variable/", "d": "15/10/2026", "pz": 30}, {"b": "Unicaja", "p": "Hipoteca Variable", "t": "variable", "tin": 2, "anos": 1, "dif": 0.55, "difS": 1.55, "tae": "4,61 %", "taeS": "4,73 %", "v": "Nómina ≥ 2.000 €/mes netos, tarjeta de crédito (1.200 €/año), seguro de hogar, seguro de vida, plan de pensiones o fondos (1,2 % del capital al año)", "n": "2,00 % el primer año, también sin bonificar. Con nómina menor de 2.000 €: 2,40 % y Euríbor + 0,65 % (TAE 4,74 %)", "f": "https://www.unicajabanco.es/es/particulares/hipotecas-y-prestamos/hipotecas/hipoteca-tipo-variable", "d": "15/10/2026", "ingMin": 2000, "ingReq": "bonif", "pz": 30}, {"b": "Kutxabank", "p": "Hipoteca Variable", "t": "variable", "tin": 2.27, "anos": 1, "dif": 0.49, "difS": 1.49, "tae": "4,11 %", "taeS": "4,75 %", "v": "Nómina ≥ 3.000 €/mes, seguro de hogar, plan de pensiones o EPSV ≥ 2.400 €/año", "n": "2,27 % el primer año, también sin bonificar. Hay que tener cuenta en Kutxabank", "f": "https://clientes.kutxabank.es/es/hipotecas/variable.html", "d": "15/10/2026", "ingMin": 3000, "ingReq": "bonif", "pz": 30}, {"b": "Bankinter", "p": "Hipoteca Variable", "t": "variable", "tin": 2.5, "anos": 3, "dif": 0.5, "difS": 1.8, "tae": "4,04 %", "taeS": "5,09 %", "v": "Cuenta nómina, seguro de vida, seguro de hogar, plan de pensiones ≥ 600 €/año", "n": "2,50 % los 3 primeros años (3,80 % sin bonificar). Pide ingresos de más de 2.500 €/mes entre los titulares", "f": "https://www.bankinter.com/banca/hipotecas-prestamos/hipotecas/hipoteca-variable", "d": "15/10/2026", "ingMin": 2500, "ingMin2": 2500, "ingReq": "acceso", "pz": 30}, {"b": "COINC", "p": "Hipoteca Variable", "t": "variable", "tin": 2.5, "anos": 3, "dif": 0.5, "difS": 0.9, "tae": "3,68 %", "taeS": "4,14 %", "v": "Cuenta nómina, profesional o no-nómina en Bankinter", "n": "Se pide por COINC y la concede Bankinter. 2,50 % los 3 primeros años (2,90 % sin bonificar). Pide ingresos de más de 2.500 €/mes entre los titulares. Oferta limitada a 25 millones de euros", "f": "https://www.coinc.es/ahorrador/nuestras-hipotecas/hipoteca-variable", "d": "15/10/2026", "ingMin": 2500, "ingMin2": 2500, "ingReq": "acceso", "pz": 30}]};
+(()=>{
+  const box=$('mh');if(!box)return;
+  const MES=['enero','febrero','marzo','abril','mayo','junio','julio','agosto','septiembre','octubre','noviembre','diciembre'];
+  const num=t=>parseFloat(String(t).replace('%','').replace(',','.'));
+  const pc=n=>n.toFixed(2).replace('.',',')+' %';
+  const eur=n=>String(Math.round(n)).replace(/\B(?=(\d{3})+(?!\d))/g,'.')+' €';
+  /* Si los datos tienen más de MH_DIAS días, la sección no se enseña: mejor nada que ofertas viejas. */
+  const MH_DIAS=10, sec=$('mejores');
+  const fresco=D=>{const m=/^(\d{4})-(\d{2})-(\d{2})/.exec(D&&D.actualizado||'');if(!m)return false;return (Date.now()-new Date(+m[1],+m[2]-1,+m[3]).getTime())/864e5<=MH_DIAS};
+  function pinta(D){
+    sec.hidden=!fresco(D);if(sec.hidden)return;
+    /* Solo ofertas comprobadas en los últimos 14 días (campo d, «dd/mm/aaaa») */
+    const reciente=o=>{const m=/^(\d{2})\/(\d{2})\/(\d{4})/.exec(o.d||'');return !!m&&(Date.now()-new Date(+m[3],+m[2]-1,+m[1]).getTime())/864e5<=14};
+    const ofs=(D.ofertas||[]).filter(o=>o&&o.tae&&isFinite(num(o.tae))&&reciente(o));
+    const best=['fija','mixta','variable'].map(t=>ofs.filter(o=>o.t===t).sort((a,b)=>num(a.tae)-num(b.tae))[0]).filter(Boolean);
+    if(!best.length)return;
+    const m=/^(\d{4})-(\d{2})/.exec(D.actualizado||'');if(m){$('mhT').textContent=`Las mejores hipotecas de ${MES[+m[2]-1]}`}
+    box.innerHTML=best.map((o,i)=>{
+      const tin=o.t==='fija'?`TIN ${pc(o.tin)} fijo`:o.t==='mixta'?`${pc(o.tin)} ${o.anos} años, luego Euríbor + ${pc(o.dif)}`:`${pc(o.tin)} ${o.anos>1?o.anos+' años':'el primer año'}, luego Euríbor + ${pc(o.dif)}`;
+      const vinc=o.v&&o.v!=='Ninguna'?`Con: ${o.v.split(/,\s*/).slice(0,3).join(', ')}${o.v.split(/,\s*/).length>3?'…':''}`:'Sin productos vinculados';
+      const req=[];if(o.ingMin)req.push(`Ingresos desde ${eur(o.ingMin)}/mes${o.ingMin2&&o.ingMin2!==o.ingMin?` (${eur(o.ingMin2)} con dos titulares)`:''}`);if(o.minImp)req.push(`Préstamo desde ${eur(o.minImp)}`);
+      return `<article class="mo t-${o.t} fx ${['l','z','r'][i]}" style="--dl:${i*.1}s">
+        <span class="ty">Mejor ${o.t}</span>
+        <div class="bk">${esc(o.b)}</div><div class="pr">${esc(o.p)}</div>
+        <div class="rate"><b>${esc(o.tae)}</b><span>TAE${o.taeF?' (según '+esc(String(o.taeF).split(',')[0])+')':''}</span></div>
+        <div class="tin">${esc(tin)}</div>
+        <ul><li>${esc(vinc)}</li>${req.map(r=>`<li>${esc(r)}</li>`).join('')}${o.pz?`<li>Hasta ${o.pz} años</li>`:''}</ul>
+        ${o.f?`<a class="src" href="${esc(o.f)}" target="_blank" rel="noopener" data-ev="mejores/${esc(o.t)}">Ver la oferta en ${esc(o.b)} ↗</a>`:''}
+      </article>`}).join('');
+    $('mhF').textContent=`Datos a ${D.fecha||D.actualizado}, tal como los publica cada banco para un perfil estándar. Son ofertas genéricas: la TAE incluye los productos que pide cada uno y no es una recomendación personalizada.`;
+    if(typeof fxs!=='undefined'){box.querySelectorAll('.fx').forEach(el=>fxs.push(el));if(typeof revela==='function')revela()}
+  }
+  pinta(MH0);
+  fetch('/vivienda/data.json',{cache:'no-cache'}).then(r=>r.ok?r.json():null).then(j=>{if(j&&Array.isArray(j.ofertas))pinta(j)}).catch(()=>{});
+})();
 
 /* Contadores */
 const fmt=n=>String(n).replace(/\B(?=(\d{3})+(?!\d))/g,'.');
@@ -532,8 +1007,8 @@ if(!RM){
     cards.forEach((c,i)=>{const nx=cards[i+1];if(!nx){c.style.transform='';return}
       const a=c.getBoundingClientRect(),b=nx.getBoundingClientRect(),k=clamp(1-(b.top-a.top)/a.height,0,1);
       c.style.transform=`scale(${1-k*.06})`;c.style.filter=`brightness(${1-k*.25})`});
-    if(jose){const r=jose.getBoundingClientRect(),k=clamp((H-r.top)/(H*.8),0,1),ins=(1-k)*14;
-      jose.style.clipPath=`inset(${ins}% ${ins}% ${ins}% ${ins}% round ${40+(1-k)*60}px)`}
+    if(jose&&!MOV){const r=jose.getBoundingClientRect(),k=clamp((H-r.top)/(H*.8),0,1),ins=(1-k)*14;
+      jose.style.transform=`scale(${.9+.1*k})`;jose.style.borderRadius=`${40+(1-k)*30}px`}
   }
   addEventListener('scroll',tick,{passive:true});addEventListener('resize',tick);frame();
 }
